@@ -1,5 +1,8 @@
+import time
 import RPi.GPIO as GPIO
 import dht11
+import LcdDisplay
+
 # initialisiere GPIO
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
@@ -9,5 +12,8 @@ instance = dht11.DHT11(pin = 4)
 result = instance.read()
 while not result.is_valid(): # lesen bis Werte ok sind
     result = instance.read()
-print("Temperature: %-3.1f C" % result.temperature)
-print("Humidity: %-3.1f %%" % result.humidity)
+
+display = LcdDisplay.LcdDisplay
+display.nachricht("Temperature: %-3.1f C" % result.temperature)
+time.sleep(1)
+display.nachricht("Humidity: %-3.1f %%" % result.humidity)
