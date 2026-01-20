@@ -1,8 +1,6 @@
 import time
 import RPi.GPIO as GPIO
 import dht11
-import LcdDisplay
-
 
 class dht11Sensor:
     def __init__(self):
@@ -21,16 +19,14 @@ class dht11Sensor:
 
 def main():
     sensor = dht11Sensor()
-    display = LcdDisplay.LcdDisplay()
     try:
         while True:
-            display.nachricht(sensor.lesen())
+            print(sensor.lesen())
             time.sleep(1)
 
     except KeyboardInterrupt:
         # LCD ausschalten.
-        display.lcd.clear()
-        display.hintergund_aus()
+        print("Ende")
 
 if __name__ == '__main__':
     main()
