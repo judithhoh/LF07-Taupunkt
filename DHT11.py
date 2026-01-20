@@ -14,6 +14,8 @@ while not result.is_valid(): # lesen bis Werte ok sind
     result = instance.read()
 
 display = LcdDisplay.LcdDisplay
-display.nachricht("Temperature: %-3.1f C" % result.temperature)
+nachricht = "Temperature: %-3.1f C" % result.temperature
+display.nachricht(nachricht)
 time.sleep(1)
-display.nachricht("Humidity: %-3.1f %%" % result.humidity)
+nachricht = "Humidity: %-3.1f %%" % result.humidity
+display.nachricht(nachricht)
