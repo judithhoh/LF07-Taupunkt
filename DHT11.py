@@ -4,7 +4,7 @@ import dht11
 import LcdDisplay
 
 
-class dht11:
+class dht11Sensor:
     def __init__(self):
         # initialisiere GPIO
         GPIO.setwarnings(False)
@@ -20,7 +20,7 @@ class dht11:
 
 
 def main():
-    sensor = dht11()
+    sensor = dht11Sensor()
     display = LcdDisplay.LcdDisplay()
     try:
         while True:
