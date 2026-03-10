@@ -6,6 +6,7 @@ from scann_berechnen import TaupunktLogik
 def main():
     sensor = Dht11Sensor()
     display = LcdDisplay()
+    display.hintergundbeleuchtung_an()
     #rechner = TaupunktLogik(4, )
     try:
         while True:
