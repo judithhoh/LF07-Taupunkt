@@ -3,13 +3,13 @@ import RPi.GPIO as GPIO
 import dht11
 
 class Dht11Sensor:
-    def __init__(self):
+    def __init__(self, pin):
         # initialisiere GPIO
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
         GPIO.cleanup()
         # lesen der Daten ueber Pin 4
-        self.scanner = dht11.DHT11(pin=4)
+        self.scanner = dht11.DHT11(pin=pin)
 
     def lesen(self):
         result = self.scanner.read()

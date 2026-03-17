@@ -4,14 +4,16 @@ from lcd_display import LcdDisplay
 from scann_berechnen import TaupunktLogik
 
 def main():
-    sensor = Dht11Sensor()
+    sensor = Dht11Sensor(4)
+    sensor2 = Dht11Sensor(37)
     display = LcdDisplay()
     display.hintergundbeleuchtung_an()
-    #rechner = TaupunktLogik(4, )
+    #rechner = TaupunktLogik(4, 37)
     try:
         while True:
             #rechner.berechnen()
-            print(sensor.lesen_display())
+            print("Sensor1:"+sensor.lesen_display())
+            print("Sensor2:"+sensor2.lesen_display())
             time.sleep(1)
 
     except KeyboardInterrupt:
