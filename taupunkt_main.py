@@ -4,7 +4,7 @@ from lcd_display import LcdDisplay
 from scann_berechnen import TaupunktLogik
 
 def main():
-    sensor = Dht11Sensor(37)
+    sensor = Dht11Sensor(4)
    # sensor2 = Dht11Sensor(37)
     display = LcdDisplay()
     display.hintergundbeleuchtung_an()
