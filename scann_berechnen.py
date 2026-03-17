@@ -21,6 +21,7 @@ class TaupunktLogik:
         self.taupunkt_innen = self.rechner.berechnen(self.temperatur_innen, self.humidity_innen)
         self.taupunkt_außen = self.rechner.berechnen(self.temperatur_außen, self.humidity_außen)
         self.delta_taupunkt = self.taupunkt_innen - self.taupunkt_außen
+        return "Taupunkt-innen: "+self.taupunkt_innen +"\nTaupunkt-außen: "+self.taupunkt_außen + "\ndelta_Taupunkt: "+self.delta_taupunkt
 
     def daten_lesen(self):
         result=self.scanner_innen.lesen()
