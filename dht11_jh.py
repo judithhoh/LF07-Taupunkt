@@ -20,6 +20,7 @@ class Dht11Sensor:
     def lesen_display(self):
         result = self.scanner.read()
         while not result.is_valid():  # lesen bis Werte ok sind
+            print("messung...")
             result = self.scanner.read()
         return "Temperature: %-3.1f C" % result.temperature + "\nHumidity: %-3.1f %%" % result.humidity
 
