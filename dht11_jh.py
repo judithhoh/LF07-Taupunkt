@@ -31,7 +31,7 @@ class Dht11Sensor:
 
 
 def main():
-    sensor = Dht11Sensor()
+    sensor = Dht11Sensor(4)
     try:
         while True:
             print(sensor.lesen())
