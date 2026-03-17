@@ -5,7 +5,7 @@ from scann_berechnen import TaupunktLogik
 
 def main():
     sensor = Dht11Sensor(4)
-   # sensor2 = Dht11Sensor(37)
+    sensor2 = Dht11Sensor(37)
     display = LcdDisplay()
     display.hintergundbeleuchtung_an()
     #rechner = TaupunktLogik(4, 37)
@@ -13,7 +13,7 @@ def main():
         while True:
             #rechner.berechnen()
             print("Sensor1:"+sensor.lesen_display())
-            #print("Sensor2:"+sensor2.lesen_display())
+            print("Sensor2:"+sensor2.lesen_display())
             time.sleep(1)
 
     except KeyboardInterrupt:
