@@ -11,7 +11,7 @@ def main():
     try:
         while True:
             #rechner.berechnen()
-            display.nachricht(sensor.lesen_display())
+            print(sensor.lesen_display())
             time.sleep(1)
 
     except KeyboardInterrupt:
