@@ -9,7 +9,7 @@ def main():
     datenbank.verbinden('Test')
     datenbank.tabelle_erstellen('Daten2',"temp INTEGER, hum INTEGER")
     datenbank.daten_einfuegen()
-    datenbank.abfrage()
+    datenbank.abfrage('Daten2')
     datenbank.schliessen()
     sensor = Dht11Sensor(4)
     sensor2 = Dht11Sensor(26)

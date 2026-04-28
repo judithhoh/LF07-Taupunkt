@@ -21,8 +21,8 @@ class sqlite_datenbank:
     def schliessen(self):
         # 4. Verbindung schließen
         self.conn.close()
-    def abfrage(self):
+    def abfrage(self, tabelle):
         # Daten abfragen
-        self.cursor.execute("SELECT * FROM Daten")
+        self.cursor.execute("SELECT * FROM "+tabelle)
         for row in self.cursor.fetchall():
             print(row)
