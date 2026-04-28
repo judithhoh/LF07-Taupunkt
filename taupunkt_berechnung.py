@@ -59,7 +59,7 @@ class Taupunktberechnung:
         return math.log10(dampfdruck / self.c)
 
     def taupunkttemperatur(self, v):
-        if v <= 0:
-            print("v Error")
-            return 0
+        #if v <= 0:
+         #   print("v Error")
+          #  return 0
         return (self.b * v) / (self.a - v)
