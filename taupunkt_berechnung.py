@@ -12,7 +12,7 @@ class Taupunktberechnung:
         self.c = 6.1078
     def berechnen(self, temperatur, humidity):
         self.temperatur = temperatur
-        print("Temperatur"+self.temperatur)
+        print("Temperatur"+str(self.temperatur))
         self.humidity = humidity
         #parameter setzten
         self.parameter_setzen()
