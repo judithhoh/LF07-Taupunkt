@@ -12,20 +12,20 @@ class Taupunktberechnung:
         self.c = 6.1078
     def berechnen(self, temperatur, humidity):
         self.temperatur = temperatur
-        print("Temperatur"+str(self.temperatur))
+        print("Temperatur "+str(self.temperatur))
         self.humidity = humidity
         #parameter setzten
         self.parameter_setzen()
         # Sättigungsdampfdruck in hPa
         sd = self.saettingugnsdampfdruck()
-        print("Seattingungsdampfdruck "+str(sd))
+        #print("Seattingungsdampfdruck "+str(sd))
         # Dampfdruck in hPa
         dd = self.dampfdruck(sd)
-        print("Dampfdruck " + str(dd))
+        #print("Dampfdruck " + str(dd))
         print()
         #v-Parameter
         v = self.v_parameter(dd)
-        print("V"+str(v))
+        #print("V"+str(v))
         # Taupunkttemperatur (°C)
         return self.taupunkttemperatur(v)
 
