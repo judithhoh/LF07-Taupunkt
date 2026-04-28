@@ -2,8 +2,15 @@ import time
 from dht11_jh import Dht11Sensor
 from lcd_display import LcdDisplay
 from scann_berechnen import TaupunktLogik
+from datenbank import sqlite_datenbank
 
 def main():
+    datenbank = sqlite_datenbank()
+    datenbank.verbinden()
+    datenbank.tabelle_erstellen()
+    datenbank.daten_einfuegen()
+    datenbank.abfrage()
+    datenbank.schliessen()
     sensor = Dht11Sensor(4)
     sensor2 = Dht11Sensor(26)
     display = LcdDisplay()
