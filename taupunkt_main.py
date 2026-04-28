@@ -11,10 +11,10 @@ def main():
     rechner = TaupunktLogik(4, 26)
     try:
         while True:
-            print("Sensor1:"+sensor.lesen_display())
-            print("Sensor2:"+sensor2.lesen_display())
+            #print("Sensor1:"+sensor.lesen_display())
+            #print("Sensor2:"+sensor2.lesen_display())
             rechner.daten_lesen()
-            rechner.berechnen()
+            print("V: "+str(rechner.berechnen()))
             time.sleep(1)
 
     except KeyboardInterrupt:
