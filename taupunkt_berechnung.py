@@ -38,13 +38,28 @@ class Taupunktberechnung:
             self.b = 240.7
 
     def saettingugnsdampfdruck(self):
+        if self.temperatur <= 0:
+            print("Temperatur Error")
+            return 0
         return self.c * pow(10, (self.a * self.temperatur) / (self.b + self.temperatur))
 
     def dampfdruck(self, saettingungsdampfdruck):
+        if self.humidity <= 0:
+            print("Feuchigkeit Error")
+            return 0
+        if saettingungsdampfdruck <= 0:
+            print("saettingungsdampfdruck Error")
+            return 0
         return saettingungsdampfdruck * (self.humidity / 100)
 
     def v_parameter(self, dampfdruck):
+        if dampfdruck <= 0:
+            print("dampfdruck Error")
+            return 0
         return math.log10(dampfdruck / self.c)
 
     def taupunkttemperatur(self, v):
+        if v <= 0:
+            print("v Error")
+            return 0
         return (self.b * v) / (self.a - v)
