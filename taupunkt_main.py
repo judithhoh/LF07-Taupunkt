@@ -6,8 +6,8 @@ from datenbank import sqlite_datenbank
 
 def main():
     datenbank = sqlite_datenbank()
-    datenbank.verbinden()
-    datenbank.tabelle_erstellen()
+    datenbank.verbinden('Test')
+    datenbank.tabelle_erstellen('Daten2',"temp INTEGER, hum INTEGER")
     datenbank.daten_einfuegen()
     datenbank.abfrage()
     datenbank.schliessen()

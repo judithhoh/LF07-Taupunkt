@@ -5,20 +5,15 @@ class sqlite_datenbank:
         self.cursor = None
         self.conn = None
 
-    def verbinden(self):
+    def verbinden(self, datei):
         # 1. Verbindung herstellen (wird erstellt, falls nicht vorhanden)
-        self.conn = sqlite3.connect('test.db')
+        self.conn = sqlite3.connect(datei+'.db')
         self.cursor = self.conn.cursor()
 
-    def tabelle_erstellen(self):
+    def tabelle_erstellen(self, tabelle, spalten):
         # 2. Tabelle erstellen
-        self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS Daten (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                temp INTEGER,
-                humytity INTEGER
-            )
-        ''')
+        steatment = 'CREATE TABLE IF NOT EXISTS '+ tabelle +'(id INTEGER PRIMARY KEY AUTOINCREMENT,' + spalten+')'
+        self.cursor.execute(steatment)
     def daten_einfuegen(self):
         # 3. Daten einfügen
         self.cursor.execute("INSERT INTO Daten (temp, humytity) VALUES (15, 10)")
