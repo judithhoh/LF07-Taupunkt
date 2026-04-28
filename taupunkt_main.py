@@ -8,11 +8,12 @@ def main():
     sensor2 = Dht11Sensor(26)
     display = LcdDisplay()
     display.hintergundbeleuchtung_an()
-    rechner = TaupunktLogik(4, 37)
+    #rechner = TaupunktLogik(4, 37)
+    rechner = TaupunktLogik(4, 26)
     try:
         while True:
-            print("Sensor1:"+sensor.lesen_display())
-            print("Sensor2:"+sensor2.lesen_display())
+            rechner.daten_lesen()
+            rechner.daten_lesen()
             rechner.berechnen()
             time.sleep(1)
 
