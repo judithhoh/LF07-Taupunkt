@@ -18,10 +18,14 @@ class Taupunktberechnung:
         self.parameter_setzen()
         # Sättigungsdampfdruck in hPa
         sd = self.saettingugnsdampfdruck()
+        print("Seattingungsdampfdruck "+str(sd))
         # Dampfdruck in hPa
         dd = self.dampfdruck(sd)
+        print("Dampfdruck " + str(dd))
+        print()
         #v-Parameter
         v = self.v_parameter(dd)
+        print("V"+str(v))
         # Taupunkttemperatur (°C)
         return self.taupunkttemperatur(v)
 
