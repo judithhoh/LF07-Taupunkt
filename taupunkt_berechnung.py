@@ -1,17 +1,18 @@
 import math
 
 
-class Taupunktberechung:
-    c = 6.1078
+class Taupunktberechnung:
+
 
     def __init__(self):
         self.a = 0.0
         self.b = 0.0
         self.temperatur = 0.0
         self.humidity = 0.0
-
+        self.c = 6.1078
     def berechnen(self, temperatur, humidity):
         self.temperatur = temperatur
+        print("Temperatur"+self.temperatur)
         self.humidity = humidity
         #parameter setzten
         self.parameter_setzen()

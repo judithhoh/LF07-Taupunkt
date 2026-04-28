@@ -1,7 +1,5 @@
-import time
-import RPi.GPIO as GPIO
 import dht11
-from taupunkt_berechnung import Taupunktberechung
+from taupunkt_berechnung import Taupunktberechnung
 
 class TaupunktLogik:
 
@@ -11,7 +9,7 @@ class TaupunktLogik:
         self.taupunkt_innen = None
         self.scanner_innen = dht11.DHT11(pin=pin1)
         self.scanner_außen = dht11.DHT11(pin=pin2)
-        self.rechner = Taupunktberechung()
+        self.rechner = Taupunktberechnung()
         self.temperatur_innen = 0.0
         self.temperatur_außen = 0.0
         self.humidity_innen = 0.0
