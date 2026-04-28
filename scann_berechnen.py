@@ -11,13 +11,13 @@ class TaupunktLogik:
         self.scanner_aussen = dht11(pin=pin2)
         self.rechner = Taupunktberechnung()
         self.temperatur_innen = 0.0
-        self.temperatur_außen = 0.0
+        self.temperatur_aussen = 0.0
         self.humidity_innen = 0.0
-        self.humidity_außen = 0.0
+        self.humidity_aussen = 0.0
 
     def berechnen(self):
         self.taupunkt_innen = self.rechner.berechnen(self.temperatur_innen, self.humidity_innen)
-        self.taupunkt_aussen = self.rechner.berechnen(self.temperatur_außen, self.humidity_außen)
+        self.taupunkt_aussen = self.rechner.berechnen(self.temperatur_aussen, self.humidity_aussen)
         self.delta_taupunkt = self.taupunkt_innen - self.taupunkt_aussen
         return "Taupunkt-innen: "+str(self.taupunkt_innen) +"\nTaupunkt-außen: "+str(self.taupunkt_aussen) + "\ndelta_Taupunkt: "+str(self.delta_taupunkt)
 
@@ -28,7 +28,7 @@ class TaupunktLogik:
         self.humidity_innen = result.humidity
         print("humidity_innen" + str(self.humidity_innen))
         result=self.scanner_aussen.lesen()
-        self.temperatur_außen= result.temperature
-        print("temperatur_außen" + str(self.temperatur_außen))
+        self.temperatur_aussen= result.temperature
+        print("temperatur_außen" + str(self.temperatur_aussen))
         self.humidity_aussen = result.humidity
-        print("humidity_außen" + str(self.humidity_außen))
+        print("humidity_außen" + str(self.humidity_aussen))
