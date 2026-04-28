@@ -13,8 +13,14 @@ class Dht11Sensor:
 
     def lesen(self):
         result = self.scanner.read()
+        count = 0
         while not result.is_valid():  # lesen bis Werte ok sind
+            if count%20==0:
+                print("messung...")
+            if count == 100:
+                return "Messung war nicht möglich"
             result = self.scanner.read()
+            count=count+1
         return result
 
     def lesen_display(self):

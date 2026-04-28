@@ -1,4 +1,4 @@
-import dht11
+from dht11_jh import Dht11Sensor as dht11
 from taupunkt_berechnung import Taupunktberechnung
 
 class TaupunktLogik:
@@ -7,8 +7,8 @@ class TaupunktLogik:
         self.delta_taupunkt = None
         self.taupunkt_außen = None
         self.taupunkt_innen = None
-        self.scanner_innen = dht11.DHT11(pin=pin1)
-        self.scanner_außen = dht11.DHT11(pin=pin2)
+        self.scanner_innen = dht11(pin=pin1)
+        self.scanner_außen = dht11(pin=pin2)
         self.rechner = Taupunktberechnung()
         self.temperatur_innen = 0.0
         self.temperatur_außen = 0.0
