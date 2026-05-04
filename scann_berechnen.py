@@ -3,7 +3,7 @@ from taupunkt_berechnung import Taupunktberechnung
 
 class TaupunktLogik:
 
-    def __init__(self, pin1, pin2):
+    def __init__(self, pin1, pin2,):
         self.delta_taupunkt = None
         self.taupunkt_aussen = None
         self.taupunkt_innen = None

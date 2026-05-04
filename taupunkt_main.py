@@ -2,17 +2,10 @@ import time
 from dht11_jh import Dht11Sensor
 from lcd_display import LcdDisplay
 from scann_berechnen import TaupunktLogik
-from datenbank import sqlite_datenbank
+from taupunkt_db import taupunkt_db_class
 
 def main():
-    datenbank = sqlite_datenbank()
-    datenbank.verbinden('Test')
-    datenbank.tabelle_erstellen('Daten2',"temp INTEGER, hum INTEGER")
-    datenbank.daten_einfuegen()
-    datenbank.abfrage('Daten2')
-    datenbank.schliessen()
-    sensor = Dht11Sensor(4)
-    sensor2 = Dht11Sensor(26)
+    datenbank = taupunkt_db_class()
     display = LcdDisplay()
     display.hintergundbeleuchtung_an()
     rechner = TaupunktLogik(4, 26)
@@ -22,12 +15,18 @@ def main():
             #print("Sensor2:"+sensor2.lesen_display())
             rechner.daten_lesen()
             print("V: "+str(rechner.berechnen()))
+            lufter = 0
+            #lüfter logig => if (rechner.berechnen == ? => dann lüfter an/aus (extra Klasse für Lüfter)
+            datenbank.daten_schreiben(rechner.temperatur_innen, rechner.temperatur_aussen, rechner.humidity_innen,
+                                      rechner.humidity_aussen, rechner.delta_taupunkt, lufter, rechner.taupunkt_innen,
+                                      rechner.taupunkt_aussen)
             time.sleep(1)
 
     except KeyboardInterrupt:
         # LCD ausschalten.
         display.lcd.clear()
         display.hintergund_aus()
+        datenbank.db.schliessen(datenbank.db)
 
 if __name__ == '__main__':
     main()
