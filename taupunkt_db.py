@@ -22,7 +22,7 @@ class taupunkt_db_class:
                      self.parameters[3] + ", " + self.parameters[4] + ", " + self.parameters[5] + ", " +
                      self.parameters[6]+ ", " + self.parameters[7]+ ", " + self.parameters[8])
         values = (str(temperatur_innen) +", "+str(luffeuchtikeit_innen)+", "+str(temperatur_aussen)+", "+
-                  str(luffeuchtigkeit_aussen) +", " +str(delta)+", datetime('new'), "+str(luefter)+", "+
+                  str(luffeuchtigkeit_aussen) +", " +str(delta)+", datetime('now'), "+str(luefter)+", "+
                   str(taupunkt_inne)+", "+ str(taupunkt_aussen))
         self.db.daten_einfuegen(self.db, self.tabelle, parameter, values)
 
