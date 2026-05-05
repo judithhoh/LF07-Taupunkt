@@ -16,7 +16,9 @@ class sqlite_datenbank:
         self.cursor.execute(steatment)
     def daten_einfuegen(self, tabelle, parameter, values):
         # 3. Daten einfügen
-        self.cursor.execute("INSERT INTO "+tabelle+" ("+parameter+") VALUES ("+values+")")
+        statement = "INSERT INTO "+tabelle+" ("+parameter+") VALUES ("+values+")"
+        print(statement)
+        self.cursor.execute(statement)
         self.conn.commit() # Änderungen speichern
     def schliessen(self):
         # 4. Verbindung schließen
