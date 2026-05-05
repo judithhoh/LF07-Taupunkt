@@ -10,6 +10,7 @@ def main():
     display.hintergundbeleuchtung_an()
     rechner = TaupunktLogik(4, 26)
     relay = relaypi(21)
+    relay.close()
     lufter = 0
     try:
         while True:
