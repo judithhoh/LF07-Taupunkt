@@ -21,8 +21,9 @@ class taupunkt_db_class:
         parameter = (self.parameters[0] + ", " + self.parameters[1] + ", " + self.parameters[2] + ", " +
                      self.parameters[3] + ", " + self.parameters[4] + ", " + self.parameters[5] + ", " +
                      self.parameters[6]+ ", " + self.parameters[7]+ ", " + self.parameters[8])
-        values = (temperatur_innen +", "+luffeuchtikeit_innen+", "+temperatur_aussen+", "+luffeuchtigkeit_aussen +", "
-                  +delta +", datetime('new'), "+luefter, taupunkt_inne, taupunkt_aussen)
+        values = (str(temperatur_innen) +", "+str(luffeuchtikeit_innen)+", "+str(temperatur_aussen)+", "+
+                  str(luffeuchtigkeit_aussen) +", " +str(delta)+", datetime('new'), "+str(luefter)+", "+
+                  str(taupunkt_inne)+", "+ str(taupunkt_aussen))
         self.db.daten_einfuegen(self.db, self.tabelle, parameter, values)
 
     def daten_lesen(self):
