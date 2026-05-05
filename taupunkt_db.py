@@ -30,7 +30,7 @@ class taupunkt_db_class:
         self.db.abfrage(self.db, self.tabelle)
 
 def main():
-   test = taupunkt_db_class
+   test = taupunkt_db_class()
    test.daten_lesen(test)
 
 if __name__ == '__main__':
