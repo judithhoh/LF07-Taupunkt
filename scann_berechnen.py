@@ -24,11 +24,11 @@ class TaupunktLogik:
     def daten_lesen(self):
         result=self.scanner_innen.lesen()
         self.temperatur_innen = result.temperature
-        print("temperatur_innen"+str(self.temperatur_innen))
+        print("temperatur_innen "+str(self.temperatur_innen)+" °C")
         self.humidity_innen = result.humidity
-        print("humidity_innen" + str(self.humidity_innen))
+        print("humidity_innen " + str(self.humidity_innen)+"%")
         result=self.scanner_aussen.lesen()
         self.temperatur_aussen= result.temperature
-        print("temperatur_außen" + str(self.temperatur_aussen))
+        print("temperatur_außen " + str(self.temperatur_aussen)+" °C")
         self.humidity_aussen = result.humidity
-        print("humidity_außen" + str(self.humidity_aussen))
+        print("humidity_außen " + str(self.humidity_aussen)+" %")

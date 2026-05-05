@@ -17,7 +17,7 @@ class sqlite_datenbank:
     def daten_einfuegen(self, tabelle, parameter, values):
         # 3. Daten einfügen
         statement = "INSERT INTO "+tabelle+" ("+parameter+") VALUES ("+values+")"
-        print(statement)
+        #print(statement)
         self.cursor.execute(statement)
         self.conn.commit() # Änderungen speichern
     def schliessen(self):
