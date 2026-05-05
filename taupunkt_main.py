@@ -17,11 +17,11 @@ def main():
             #print("V: "+str(rechner.berechnen()))
             rechner.berechnen()
             print("delta: "+str(rechner.delta_taupunkt))
-            if rechner.delta_taupunkt+8 > 0:
+            if rechner.delta_taupunkt+9 > 0:
                 lufter = 1
                 relay.open()
                 print("lüfter an")
-            if rechner.delta_taupunkt+8 <= 0:
+            if rechner.delta_taupunkt+9 <= 0:
                 lufter = 0
                 relay.close()
                 print("lüfter aus")
