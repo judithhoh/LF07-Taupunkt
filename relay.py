@@ -7,7 +7,7 @@ class relaypi:
     def __init__(self, pin):
         self.relay_pin = pin
         # Board Modus GPIO.BOARD
-        GPIO.setmode(GPIO.BOARD)
+        GPIO.setmode(GPIO.BCM)
         # relay_pin als Ausgang
         GPIO.setup(self.relay_pin, GPIO.OUT)
     def open(self):
@@ -19,7 +19,7 @@ class relaypi:
         GPIO.cleanup()
 
 def main():
-   test = relay(40)
+   test = relaypi(40)
    # Oeffne Relais
    test.open()
    # warte eine halbe Sekunde

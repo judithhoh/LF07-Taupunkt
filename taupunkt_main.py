@@ -1,5 +1,4 @@
 import time
-from dht11_jh import Dht11Sensor
 from lcd_display import LcdDisplay
 from scann_berechnen import TaupunktLogik
 from taupunkt_db import taupunkt_db_class
@@ -10,12 +9,10 @@ def main():
     display = LcdDisplay()
     display.hintergundbeleuchtung_an()
     rechner = TaupunktLogik(4, 26)
-    relay = relaypi(40)
+    relay = relaypi(21)
     lufter = 0
     try:
         while True:
-            #print("Sensor1:"+sensor.lesen_display())
-            #print("Sensor2:"+sensor2.lesen_display())
             rechner.daten_lesen()
             #print("V: "+str(rechner.berechnen()))
             rechner.berechnen()
@@ -25,7 +22,7 @@ def main():
             if rechner.delta_taupunkt <= 0:
                 lufter = 0
                 relay.close()
-            #lüfter logig => if (rechner.berechnen == ? => dann lüfter an/aus (extra Klasse für Lüfter)
+            #lüfter logig => if (rechner.berechnen == ? => dann lüfter an/aus
             datenbank.daten_schreiben(rechner.temperatur_innen, rechner.temperatur_aussen, rechner.humidity_innen,
                                       rechner.humidity_aussen, rechner.delta_taupunkt, lufter, rechner.taupunkt_innen,
                                       rechner.taupunkt_aussen)
