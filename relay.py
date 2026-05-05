@@ -3,7 +3,7 @@
 import RPi.GPIO as GPIO
 import time
 
-class relay:
+class relaypi:
     def __init__(self, pin):
         self.relay_pin = pin
         # Board Modus GPIO.BOARD
