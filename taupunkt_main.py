@@ -17,15 +17,14 @@ def main():
             #print("V: "+str(rechner.berechnen()))
             rechner.berechnen()
             print("delta: "+str(rechner.delta_taupunkt))
-            if rechner.delta_taupunkt+9 > 0:
+            if rechner.delta_taupunkt > 0:
                 lufter = 1
                 relay.open()
                 print("lüfter an")
-            if rechner.delta_taupunkt+9 <= 0:
+            if rechner.delta_taupunkt <= 0:
                 lufter = 0
                 relay.close()
                 print("lüfter aus")
-            #lüfter logig => if (rechner.berechnen == ? => dann lüfter an/aus
             datenbank.daten_schreiben(rechner.temperatur_innen, rechner.temperatur_aussen, rechner.humidity_innen,
                                       rechner.humidity_aussen, rechner.delta_taupunkt, lufter, rechner.taupunkt_innen,
                                       rechner.taupunkt_aussen)
