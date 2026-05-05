@@ -31,7 +31,7 @@ class taupunkt_db_class:
 
 def main():
    test = taupunkt_db_class
-   test.daten_lesen()
+   test.daten_lesen(test)
 
 if __name__ == '__main__':
     main()

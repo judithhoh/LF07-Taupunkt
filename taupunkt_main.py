@@ -14,7 +14,8 @@ def main():
             #print("Sensor1:"+sensor.lesen_display())
             #print("Sensor2:"+sensor2.lesen_display())
             rechner.daten_lesen()
-            print("V: "+str(rechner.berechnen()))
+            #print("V: "+str(rechner.berechnen()))
+            rechner.berechnen()
             lufter = 0
             #lüfter logig => if (rechner.berechnen == ? => dann lüfter an/aus (extra Klasse für Lüfter)
             datenbank.daten_schreiben(rechner.temperatur_innen, rechner.temperatur_aussen, rechner.humidity_innen,
