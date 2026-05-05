@@ -28,3 +28,10 @@ class taupunkt_db_class:
 
     def daten_lesen(self):
         self.db.abfrage(self.db, self.tabelle)
+
+def main():
+   test = taupunkt_db_class
+   test.daten_lesen()
+
+if __name__ == '__main__':
+    main()
