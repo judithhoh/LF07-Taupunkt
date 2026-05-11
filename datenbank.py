@@ -29,6 +29,13 @@ class sqlite_datenbank:
         print("Tabellen inhalt")
         for row in self.cursor.fetchall():
             print(row)
+    def abfrage_genauer(self, tabelle, spalten, extra):
+        # Daten abfragen
+        self.cursor.execute("SELECT "+spalten+" FROM "+tabelle+" "+extra)
+        return self.cursor.fetchall()
+       # print("Tabellen inhalt")
+        #for row in self.cursor.fetchall():
+         #   print(row)
 
 def main():
    test = sqlite_datenbank

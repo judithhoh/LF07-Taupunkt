@@ -6,15 +6,20 @@ import time
 class relaypi:
     def __init__(self, pin):
         self.relay_pin = pin
+        self.state = False
         # Board Modus GPIO.BOARD
         GPIO.setmode(GPIO.BCM)
         # relay_pin als Ausgang
         GPIO.setup(self.relay_pin, GPIO.OUT)
     def open(self):
         GPIO.output(self.relay_pin, GPIO.LOW)
+        self.state = True
     def close(self):
         # schliesse Relais
         GPIO.output(self.relay_pin, GPIO.HIGH)
+        self.state = False
+    def get_state(self):
+            return self.state
     def cleanup(self):
         GPIO.cleanup()
 

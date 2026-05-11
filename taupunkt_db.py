@@ -29,9 +29,24 @@ class taupunkt_db_class:
     def daten_lesen(self):
         self.db.abfrage(self.db, self.tabelle)
 
+    def daten_lesen_lufter_staus(self):
+        return self.db.abfrage_genauer(self.db, self.tabelle, self.parameters[6], "ORDER BY id DESC LIMIT 1;")
+    def daten_lesen_50(self):
+        return self.db.abfrage_genauer(self.db, self.tabelle, "*", "ORDER By id DESC LIMIT 50")
+
+    def datenbank_refrash(self):
+        return self.daten_lesen_50()
+
+
 def main():
    test = taupunkt_db_class()
+   test.daten_schreiben(10.3, 10.4, 20, 20, -1,1,13,14)
+   #test.daten_schreiben(10.3, 10.4, 20, 20, -1,0,13,14)
    test.daten_lesen()
+   test.db.schliessen(test.db)
+
+
+
 
 if __name__ == '__main__':
     main()
