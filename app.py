@@ -69,9 +69,9 @@ def tabelle():
             f"<td>{datensatz[1]} °C</td>"
             f"<td>{datensatz[4]} %</td>"
             f"<td>{datensatz[2]} %</td>"
-            f"<td>{datensatz[8]} °C</td>"
-            f"<td>{datensatz[9]} °C</td>"
-            f"<td>{datensatz[5]}</td>"
+            f"<td>{datensatz[8]:.2f} °C</td>"
+            f"<td>{datensatz[9]:.2f} °C</td>"
+            f"<td>{datensatz[5]:.2f}</td>"
             f"<td>{datensatz[7]}</td>"
             "</tr>"
         )
