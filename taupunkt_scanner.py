@@ -1,22 +1,9 @@
 import time
 #from lcd_display import LcdDisplay
-#from objekte import relay, rechner
-from relay import relaypi
-from scann_berechnen import TaupunktLogik
+from objekte import relay, rechner
 from taupunkt_db import taupunkt_db_class
 
 def main():
-    print("ERSTELLE RECHNER")
-
-    rechner = TaupunktLogik(4, 26)
-
-    print("RECHNER FERTIG")
-    print("ERSTELLE RELAY")
-
-    relay = relaypi(21)
-
-    print("RELAY FERTIG")
-
     #display = LcdDisplay()
     #display.hintergundbeleuchtung_an()
     datenbank = taupunkt_db_class()
