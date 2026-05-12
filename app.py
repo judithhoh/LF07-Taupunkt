@@ -1,5 +1,4 @@
 from flask import Flask
-from markupsafe import escape
 from flask import request
 from objekte import relay
 from taupunkt_db import taupunkt_db_class
@@ -16,6 +15,13 @@ def hello_world():
             "werden soll. Diese Daten sollen über eine Webseite (diese Webseite) ausgelesn und angezeigt werden <br>"
              "(die neusten also refrashing möglich). neben dem kontrollieren von dem Lüftr über die berechungen soll <br>"
               "dies auch manuel möglich sein (Button oder so)</p>"
+            "<form method='GET' action='/tabelle'>"
+            "<button type='submit'>Datenbank Tabelle</button>"
+            "</form>"
+            "<form method='GET' action='/button'>"
+            "<button type='submit'>Lüfter Steuerung</button>"
+            "</form>"
+
             "</body></html> ")
 
 @app.route("/tabelle")
