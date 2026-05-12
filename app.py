@@ -45,7 +45,9 @@ def tabelle():
     "</head>"
 
     "<body>"
-
+    "<form method='GET' action='/'>"
+    "<button type='submit'>zurück</button>"
+    "</form>"
     "<h1>Taupunktlüfter Tabelle</h1>"
     "<table style=\"width:100%\">"
     "<tr>"
@@ -102,7 +104,9 @@ def button():
             "<html>"
             "<head><title>Taupunktlüfter_Button</title></head>"
             "<body>"
-
+            "<form method='GET' action='/'>"
+            "<button type='submit'>zurück</button>"
+            "</form>"
             "<h1>Taupunktlüfter Lüfter kontrolle</h1>"
 
             f"<p>Lüfter Status: {status}</p>"
