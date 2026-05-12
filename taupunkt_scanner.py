@@ -12,7 +12,7 @@ from taupunkt_db import taupunkt_db_class
 def main():
     print("ERSTELLE RELAY")
 
-    relay = relaypi(40)
+    relay = relaypi(21)
 
     print("RELAY FERTIG")
     print("ERSTELLE RECHNER")
