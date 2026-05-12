@@ -3,9 +3,6 @@ import time
 
 from app import app
 from taupunkt_scanner import main
-import RPi.GPIO as GPIO
-
-GPIO.setmode(GPIO.BCM)
 
 if __name__ == '__main__':
     t = threading.Thread(target=main)
