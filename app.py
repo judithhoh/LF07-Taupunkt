@@ -3,6 +3,8 @@ from markupsafe import escape
 from flask import request
 from objekte import relay
 from taupunkt_db import taupunkt_db_class
+from flask import redirect
+from flask import url_for
 
 app = Flask(__name__)
 
@@ -80,23 +82,41 @@ def tabelle():
 
 @app.route("/button")
 def button():
-    return (" <!DOCTYPE html><html><head><title>Taupunktlüfter_Button</title></head><body><h1>Taupunktlüfter Lüfter kontrolle</h1>"
-            "  <form method=\"POST\" action=\"/luefter\">"
-            "<button type=\"submit\">"
+    status = "AN" if relay.get_state() else "AUS"
+
+    erfolg = request.args.get("ok")
+
+    meldung = ""
+
+    if erfolg == "1":
+        meldung = "<p>Lüfter erfolgreich umgeschaltet!</p>"
+
+    return (
+            "<!DOCTYPE html>"
+            "<html>"
+            "<head><title>Taupunktlüfter_Button</title></head>"
+            "<body>"
+
+            "<h1>Taupunktlüfter Lüfter kontrolle</h1>"
+
+            f"<p>Lüfter Status: {status}</p>"
+
+            + meldung +
+
+            "<form method='POST' action='/luefter'>"
+            "<button type='submit'>"
             "Lüfter umschalten"
             "</button>"
-            "</form> "
-            "</body></html> ")
+            "</form>"
+
+            "</body></html>"
+    )
 
 @app.route("/luefter", methods=["POST"])
 def luefter_schalten():
-    if relay.get_state():
+    state = relay.get_state()
+    if state:
         relay.close()
     else:
         relay.open()
-    return "OK"
-
-@app.route("/hello")
-def hello():
-    name = request.args.get("name", "Flask")
-    return f"Hello, {escape(name)}!"
+    return redirect(url_for("button"))
