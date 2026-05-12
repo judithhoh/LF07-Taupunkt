@@ -12,7 +12,10 @@ def main():
     lufter = 0
     try:
         while True:
-            rechner.daten_lesen()
+            result = rechner.daten_lesen()
+            if result == "Messung war nicht möglich":
+                print(result + "rechnen überspungen")
+                continue
             #print("V: "+str(rechner.berechnen()))
             rechner.berechnen()
             print("delta: "+str(rechner.delta_taupunkt))

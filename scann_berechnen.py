@@ -23,11 +23,17 @@ class TaupunktLogik:
 
     def daten_lesen(self):
         result=self.scanner_innen.lesen()
+        if result == "Messung war nicht möglich":
+            print(result+"lessen überspungen")
+            return result
         self.temperatur_innen = result.temperature
         print("temperatur_innen "+str(self.temperatur_innen)+" °C")
         self.humidity_innen = result.humidity
         print("humidity_innen " + str(self.humidity_innen)+"%")
         result=self.scanner_aussen.lesen()
+        if result == "Messung war nicht möglich":
+            print(result + "lessen überspungen")
+            return result
         self.temperatur_aussen= result.temperature
         print("temperatur_außen " + str(self.temperatur_aussen)+" °C")
         self.humidity_aussen = result.humidity
