@@ -18,6 +18,7 @@ class Dht11Sensor:
             if count%20==0:
                 print("messung...")
             if count == 100:
+                print("Messung war nicht möglich")
                 return "Messung war nicht möglich"
             result = self.scanner.read()
             count=count+1
@@ -30,6 +31,7 @@ class Dht11Sensor:
             if count%20==0:
                 print("messung...")
             if count == 100:
+                print("Messung war nicht möglich")
                 return "Messung war nicht möglich"
             result = self.scanner.read()
             count=count+1
