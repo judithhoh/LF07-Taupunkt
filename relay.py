@@ -24,7 +24,7 @@ class relaypi:
         GPIO.cleanup()
 
 def main():
-   test = relaypi(40)
+   test = relaypi(21)
    # Oeffne Relais
    test.open()
    # warte eine halbe Sekunde
