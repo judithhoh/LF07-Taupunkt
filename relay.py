@@ -3,12 +3,13 @@
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BCM)
+
 class relaypi:
     def __init__(self, pin):
         self.relay_pin = pin
         self.state = False
         # Board Modus GPIO.BOARD
+        GPIO.setmode(GPIO.BCM)
         # relay_pin als Ausgang
         GPIO.setup(self.relay_pin, GPIO.OUT)
     def open(self):
@@ -26,7 +27,7 @@ class relaypi:
         GPIO.cleanup()
 
 def main():
-   test = relaypi(21)
+   test = relaypi(40)
    # Oeffne Relais
    test.open()
    # warte eine halbe Sekunde
