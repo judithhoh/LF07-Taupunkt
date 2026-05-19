@@ -1,0 +1,96 @@
+\documentclass[
+    12pt,
+    a4paper
+]{article}
+
+% ----------------------------
+% Seitenlayout
+% ----------------------------
+\usepackage[
+    left=2.5cm,
+    right=1.5cm,
+    top=2.5cm,
+    bottom=2.5cm
+]{geometry}
+
+% ----------------------------
+% Arial Schriftart
+% ----------------------------
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% ----------------------------
+% Sprache
+% ----------------------------
+\usepackage[ngerman]{babel}
+
+% ----------------------------
+% Bilder & Links
+% ----------------------------
+\usepackage{graphicx}
+\usepackage[
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+]{hyperref}
+\usepackage{float}
+
+% ----------------------------
+% Codeblöcke
+% ----------------------------
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!10}
+}
+
+% ----------------------------
+% Dokumentbeginn
+% ----------------------------
+\begin{document}
+
+% ==================================================
+% Deckblatt
+% ==================================================
+\begin{titlepage}
+
+    \centering
+
+    \vspace*{3cm}
+
+    {\Huge\textbf{Arbeitsprotokoll}}\\[1cm]
+
+    {\Large BBS Projekt – FIAE 2. Lehrjahr}\\[2cm]
+
+    \begin{tabular}{ll}
+        Name: & Max Mustermann \\
+        Klasse: & FIAE22A \\
+        Betrieb: & Musterfirma GmbH \\
+        Projekt: & Inventarverwaltungssystem \\
+        Zeitraum: & August 2025 -- Januar 2026 \\
+    \end{tabular}
+
+    \vfill
+
+    {\large \today}
+
+\end{titlepage}
+
+% ==================================================
+% Inhaltsverzeichnis
+% ==================================================
+\tableofcontents
+
+\newpage
+
+\input{kapitel/einleitung}
+%\input{kapitel/projektbeschreibung}
+\input{kapitel/arbeitsprotokoll}
+%\input{kapitel/fazit}
+
+\end{document}

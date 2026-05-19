@@ -1,0 +1,26 @@
+# Fdb version 4
+["pdflatex"] 1779201511.69122 "/home/judith/LF07/Arbeitsprotokoll/Arbeitsprotokoll_main.tex" "Arbeitsprotokoll_main.pdf" "Arbeitsprotokoll_main" 1779201512.35796 2
+  "/etc/texmf/web2c/texmf.cnf" 1779195940.93948 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/judith/LF07/Arbeitsprotokoll/Arbeitsprotokoll_main.tex" 1779201510.11502 1859 2ca35978c970d430bfbe2f29259fb904 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1705352648 20144 147463a6a579f4597269ef9565205cfe ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo" 1705352648 8449 f07039d8e4e89f21078d9b5137579bfc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty" 1642282977 1656 7e824878bad4df5a3e8bba4e463d9126 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty" 1654720880 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1704491087 30006 57b07afb710ee2f649c65cfbafda39c1 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty" 1705955748 6565 cfd9fd0a1d5f5ad985151778771ff7a9 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1696969620 9327 c30c00c0072edba199ede5889311aaa9 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1779198716 8212507 fe39e8b7dd7d19d54e9d159ccbc4c311 ""
+  "Arbeitsprotokoll_main.aux" 1779201511.68975 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "Arbeitsprotokoll_main.tex" 1779201510.11502 1859 2ca35978c970d430bfbe2f29259fb904 ""
+  (generated)
+  "Arbeitsprotokoll_main.aux"
+  "Arbeitsprotokoll_main.log"
+  "Arbeitsprotokoll_main.pdf"
+  (rewritten before read)

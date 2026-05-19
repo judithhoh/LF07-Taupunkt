@@ -1,0 +1,10 @@
+\subsection{16.09.2025}
+
+\subsubsection{Ziel}
+Einrichtung des Backends.
+
+\subsubsection{Durchgeführte Arbeiten}
+\begin{itemize}
+    \item Spring Boot eingerichtet
+    \item Datenbank verbunden
+\end{itemize}
