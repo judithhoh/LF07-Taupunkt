@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.5.19)  19 MAY 2026 18:37
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.5.19)  20 MAY 2026 07:04
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/judith/PycharmProjects/LF07-Taupunkt/Arbeitsprotokoll/Arbeitsprotokoll_main.tex
@@ -545,50 +545,53 @@ Package hyperref Info: Link coloring ON on input line 55.
 
 \openout3 = Arbeitsprotokoll_main.out
 \c@lstlisting=\count302
-<bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg, id=84, 1241.1168pt x 828.2142pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 70.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 70.
+<bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg, id=80, 1241.1168pt x 828.2142pt>
 File: bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg Graphic file (type jpg)
 <use bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg>
-Package luatex.def Info: bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg  used on input line 72.
-(luatex.def)             Requested size: 435.32422pt x 290.49855pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 75.
+Package luatex.def Info: bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg  used on input line 78.
+(luatex.def)             Requested size: 241.84843pt x 161.38106pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
-<./bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg>] (./Arbeitsprotokoll_main.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg>] (./Arbeitsprotokoll_main.toc)
 \tf@toc=\write4
 
 \openout4 = Arbeitsprotokoll_main.toc
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1] (./kapitel/einleitung.tex) (./kapitel/arbeitsprotokoll.tex (./tage/2025-11-11.tex) [2] (./tage/2025-11-18.tex) [3] (./tage/2025-11-25.tex) [4]) (./Arbeitsprotokoll_main.aux)
+[1] (./kapitel/einleitung.tex) (./kapitel/arbeitsprotokoll.tex (./tage/2025-11-11.tex) [2] (./tage/2025-11-18.tex
+Overfull \hbox (18.27829pt too wide) in paragraph at lines 8--17
+\TU/Arial(0)/m/n/12 PI zu in-ter-agie-ren und die Ein-rich-tung ge-mäß der Schrit-te in \TU/lmtt/m/n/12 RaspberryPi_erste_Schritte.docx
+ []
+
+) [3] (./tage/2025-11-25.tex) [4]) (./Arbeitsprotokoll_main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Arbeitsprotokoll_main.out' has not changed.
-(rerunfilecheck)             Checksum: 40EE641F95FA86160D33149C1A89158C;2672.
+(rerunfilecheck)             Checksum: 74C9B11642F4FD3C31DB2FDEFA935B42;2890.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14757 strings out of 476553
+ 14754 strings out of 476553
  125027,1977958 words of node,token memory allocated
  464 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 5 glue, 3 kern, 1 glyph, 7 attribute, 52 glue_spec, 5 attribute_list, 1 write nodes
-   avail lists: 1:2,2:766,3:212,4:165,5:192,6:62,7:2858,8:1,9:349,10:6,11:284
- 36449 multiletter control sequences out of 65536+600000
- 45 fonts using 5412863 bytes
- 79i,6n,89p,324b,379s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/fonts/truetype/msttcorefonts/Arial.ttf></usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf>
-Output written on Arbeitsprotokoll_main.pdf (5 pages, 8670316 bytes).
+   avail lists: 1:2,2:730,3:202,4:156,5:178,6:59,7:4202,8:2,9:333,10:6,11:452
+ 36448 multiletter control sequences out of 65536+600000
+ 46 fonts using 5538951 bytes
+ 79i,6n,89p,375b,379s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/msttcorefonts/Arial.ttf></usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf>
+Output written on Arbeitsprotokoll_main.pdf (5 pages, 8676464 bytes).
 
-PDF statistics: 148 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 131072)
- 161 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 149 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 131072)
+ 153 words of extra memory for PDF output out of 10000 (max. 100000000)
 
