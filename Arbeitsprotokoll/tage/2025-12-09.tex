@@ -1,0 +1,102 @@
+\subsection{09.12.2025}
+
+\subsubsection{Ziel}
+
+Das Ziel des Tages war es, weitere Lektionen der JOY-PI-Anleitung
+anzusehen und durchzuführen.
+
+\subsubsection{Durchgeführte Arbeiten}
+
+Es wurde der Quellcode der Lektion 7 zur Erfassung von Temperatur und
+Luftfeuchtigkeit analysiert und ausgeführt, da dieser Sensor für das
+Projekt essenziell ist.
+
+Zusätzlich wurde der Quellcode der Lektion 10 zur Steuerung des
+LCD-Displays betrachtet, da das Display optional zur Darstellung der
+Messdaten verwendet werden kann.
+
+\subsubsection{Problem 1: Ausführung der Lektion 7}
+
+Das Programm \texttt{dht\_11.py} wurde innerhalb der aktivierten
+virtuellen Umgebung mit dem Befehl
+\texttt{sudo python3 dht\_11.py} ausgeführt.
+
+Dabei trat die Fehlermeldung
+\texttt{ModuleNotFoundError: No module named 'dht11'} auf.
+
+Beim erneuten Versuch, das Modul zu installieren, wurde folgende
+Meldung angezeigt:
+
+\texttt{Requirement already satisfied: dht11 in ./my-venv/lib/python3.13/site-packages}
+
+\texttt{Requirement already satisfied: RPi.GPIO in ./my-venv/lib/python3.13/site-packages}
+
+\textbf{Lösung}
+
+Nach mehreren erfolglosen Versuchen, das Modul erneut zu installieren,
+wurde das Skript ohne \texttt{sudo} mit dem Befehl
+\texttt{python3 dht\_11.py} ausgeführt.
+
+Dadurch konnte das Programm erfolgreich gestartet werden.
+Das Verwenden von \texttt{sudo} war in diesem Fall nicht notwendig,
+da die virtuelle Umgebung bereits die benötigten Berechtigungen und
+Bibliotheken bereitstellte.
+
+Vermutlich trat das Problem in vorherigen Lektionen nicht auf,
+da die benötigten Module dort zusätzlich systemweit installiert waren.
+
+\subsubsection{Problem 2: Ausführung der Lektion 10}
+
+Beim Ausführen des Skripts \texttt{lcd.py} trat die Fehlermeldung auf,
+dass das Modul \texttt{board} nicht gefunden werden konnte.
+
+\textbf{Lösung}
+
+An diesem Tag konnte noch keine endgültige Lösung gefunden werden.
+Es wurde versucht, das fehlende Modul zu installieren und die Ursache
+des Problems weiter zu analysieren.
+
+\subsubsection{Erkenntnisse}
+
+Erkenntnisse aus Lektion 7:
+
+\begin{itemize}
+    \item Für die Nutzung des Sensors muss das Modul
+    \texttt{dht11} importiert werden.
+
+    \item Das \texttt{dht11}-Objekt wird mit der entsprechenden
+    GPIO-Pin-Nummer initialisiert.
+
+    \item Die Methode \texttt{read()} gibt ein Objekt zurück,
+    das die Messwerte für Temperatur und Luftfeuchtigkeit enthält.
+
+    \item Es kann zu ungültigen Messwerten kommen, die mit
+    \texttt{is\_valid()} überprüft werden können.
+\end{itemize}
+
+Erkenntnisse aus Lektion 10:
+
+\begin{itemize}
+    \item Die Zeile
+    \texttt{\# -*- coding: utf-8 -*-}
+    ermöglicht die korrekte Darstellung von Umlauten.
+
+    \item Für die Steuerung des LCD-Displays müssen die Module
+    \texttt{time}, \texttt{board}, \texttt{busio} und
+    \texttt{adafruit\_character\_lcd.character\_lcd\_i2c}
+    importiert werden.
+
+    \item Das LCD-Display muss mit den entsprechenden Pins sowie
+    der Anzahl an Zeilen und Spalten initialisiert werden.
+
+    \item Der I\textsuperscript{2}C-Bus wird mit
+    \texttt{busio.I2C()} initialisiert.
+
+    \item Mit \texttt{lcd.message}, \texttt{lcd.clear()} und
+    \texttt{lcd.backlight} kann das LCD-Display gesteuert werden.
+\end{itemize}
+
+\subsubsection{Nächste Schritte}
+
+Für die nächste Woche ist geplant, die Probleme mit Lektion 10 zu lösen,
+damit das LCD-Display zur Darstellung der Messdaten verwendet werden kann.

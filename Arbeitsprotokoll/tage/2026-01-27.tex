@@ -1,0 +1,67 @@
+\subsection{27.01.2026 (Freistunde)}
+
+\subsubsection{Ziel}
+
+Ziel des Tages war es, die Taupunktberechnung für Python
+anzupassen und in das bestehende Projekt zu integrieren.
+
+\subsubsection{Durchgeführte Arbeiten}
+
+Zunächst wurden Klassen- und Dateinamen an gängige
+Namenskonventionen angepasst, um die Struktur und
+Lesbarkeit des Projekts zu verbessern.
+
+Anschließend wurden die Funktionen zur Berechnung des
+Taupunkts in Python implementiert und in das bestehende
+Projekt integriert.
+
+Die Funktionalität wurde dabei auf die beiden Dateien
+\texttt{scann\_berechnen.py} und
+\texttt{taupunkt\_berechnen.py} aufgeteilt,
+um den Quellcode übersichtlicher zu strukturieren.
+
+In \texttt{scann\_berechnen.py} wurde die Klasse
+\texttt{TaupunktLogik} erstellt.
+Diese importiert sowohl den DHT11-Scanner als auch die
+Taupunktberechnung, verarbeitet die Sensordaten und
+übergibt diese an die Berechnungsklasse.
+
+Die berechneten Ergebnisse werden anschließend wieder
+an die Hauptlogik zurückgegeben.
+
+Zusätzlich wurde in
+\texttt{taupunkt\_berechnen.py} die Klasse
+\texttt{TaupunktBerechnung} erstellt.
+Diese erhält die Sensordaten als Übergabeparameter und
+berechnet daraus die Taupunkttemperatur der Messpunkte.
+
+Zum aktuellen Zeitpunkt wurde die Berechnung jedoch erst
+für einen Sensor umgesetzt.
+
+Darüber hinaus wurde die Klasse
+\texttt{TaupunktLogik} bereits in
+\texttt{taupunkt\_main.py} importiert.
+Eine aktive Nutzung erfolgt jedoch noch nicht, da der
+zweite Sensor bislang nicht implementiert wurde.
+
+Es wurden keine Tests durchgeführt, da der Joy-Pi aktuell nicht zur Verfügung steht.
+
+\subsubsection{Erkenntnisse}
+
+Es wurde festgestellt, dass Python-Dateien üblicherweise
+im Snake-Case benannt werden, während für Klassennamen
+die CamelCase-Schreibweise verwendet wird.
+
+Zusätzlich wurde deutlich, dass eine Aufteilung des
+Programms in mehrere spezialisierte Klassen die
+Wartbarkeit und Übersichtlichkeit des Projekts verbessert.
+
+\subsubsection{Nächste Schritte}
+
+In der nächsten Woche soll der zweite DHT11-Sensor
+angeschlossen und in die Taupunktberechnung integriert
+werden.
+
+Außerdem sollen die Berechnungsergebnisse in die
+Hauptlogik übernommen und anschließend auf dem
+LCD-Display ausgegeben werden.

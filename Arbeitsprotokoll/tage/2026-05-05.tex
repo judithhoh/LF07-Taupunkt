@@ -1,0 +1,88 @@
+\subsection{05.05.2026}
+
+\subsubsection{Ziel}
+
+Ziel des Tages war es, die Datenbank mit
+echten Messdaten zu testen sowie den Lüfter
+anzuschließen und die Steuerung umzusetzen.
+
+\subsubsection{Durchgeführte Arbeiten}
+
+Zunächst wurde überprüft, ob die Messdaten
+korrekt in der SQLite-Datenbank gespeichert
+werden.
+
+Außerdem wurde die Ansteuerung des Lüfters
+vorbereitet und getestet.
+
+Dabei stellte sich heraus, dass der Lüfter
+bereits von der vorherigen Gruppe angeschlossen
+worden war.
+
+Zusätzlich wurde die Steuerung des Relais
+in die bestehende Programmstruktur integriert.
+
+\subsubsection{Problem 1: Fehler in der Datenbank}
+
+Der Zeitstempel wurde nicht korrekt in der
+Datenbank gespeichert.
+
+\textbf{Lösung}
+
+Es wurde festgestellt, dass die Funktion
+\texttt{datetime("now")} fehlerhaft geschrieben
+war.
+
+Nach der Korrektur wurde der Zeitstempel
+ordnungsgemäß gespeichert.
+
+\subsubsection{Problem 2: Probleme mit Relais und Lüfter}
+
+Beim Initialisieren der GPIO-Pins konnten
+die benötigten Pins nicht korrekt erkannt
+werden.
+
+\textbf{Lösung}
+
+Es wurde festgestellt, dass innerhalb des
+Projekts unterschiedliche GPIO-Modi verwendet
+wurden.
+
+Für die DHT11-Sensoren wurde der Modus
+\texttt{GPIO.BCM} genutzt, während beim
+Relais versehentlich \texttt{GPIO.BOARD}
+verwendet wurde.
+
+Daraufhin wurde das gesamte Projekt auf den
+BCM-Modus vereinheitlicht.
+
+Dadurch musste der Lüfteranschluss von
+Pin 40 auf GPIO 21 angepasst werden.
+
+Zusätzlich wurde festgestellt, dass zuerst
+die DHT11-Sensoren initialisiert werden
+müssen, bevor das Relais fehlerfrei gestartet
+werden kann.
+
+\subsubsection{Erkenntnisse}
+
+Es wurde deutlich, dass innerhalb eines
+GPIO-Projekts ein einheitlicher GPIO-Modus
+verwendet werden muss, um Konflikte und
+Fehler bei der Pin-Ansteuerung zu vermeiden.
+
+Außerdem wurde bestätigt, dass die
+SQLite-Datenbank erfolgreich genutzt werden
+kann, um Sensordaten dauerhaft zu speichern.
+
+Zusätzlich wurde erkannt, dass die Reihenfolge
+der Hardwareinitialisierung Einfluss auf die
+Funktionsfähigkeit einzelner Komponenten haben
+kann.
+
+\subsubsection{Nächste Schritte}
+
+Als nächster Schritt soll eine Webseite
+erstellt werden, um die Messdaten tabelarisch
+darzustellen und die Taupunktlüftung zu
+überwachen.

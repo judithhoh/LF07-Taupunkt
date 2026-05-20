@@ -1,0 +1,107 @@
+\subsection{20.01.2026}
+
+\subsubsection{Ziel}
+
+Ziel des Tages war es, die Klassenstruktur des Skripts
+\texttt{lcdDisplay.py} zu testen und die Messwerte des
+DHT11-Sensors über das Skript \texttt{main.py} auf dem
+LCD-Display auszugeben.
+
+\subsubsection{Durchgeführte Arbeiten}
+
+Zunächst wurde die Klassenstruktur von
+\texttt{lcdDisplay.py} durch das Ausführen der Main-Methode
+getestet.
+
+Anschließend wurde überprüft, ob das Skript
+\texttt{DHT11.py} weiterhin korrekt funktioniert.
+
+Danach wurde das Skript so angepasst, dass die Temperatur-
+und Luftfeuchtigkeitswerte nicht mehr ausschließlich auf der
+Konsole, sondern zusätzlich auf dem LCD-Display ausgegeben
+werden.
+
+Hierfür wurde die Klasse \texttt{LcdDisplay} aus
+\texttt{lcdDisplay.py} in \texttt{DHT11.py} importiert und
+eine Instanz der Klasse erstellt, um die Ausgabe der
+Sensordaten auf dem Display zu ermöglichen.
+
+Zusätzlich wurde das Skript \texttt{DHT11.py} um eine
+Endlosschleife erweitert, damit die Sensorwerte kontinuierlich
+gemessen und aktualisiert werden.
+
+Im weiteren Verlauf wurde innerhalb von
+\texttt{DHT11.py} die Klasse \texttt{dht11Sensor}
+erstellt, damit die Funktionen des Sensors zukünftig aus
+dem Hauptskript aufgerufen werden können.
+
+Der bisherige Ablauf des Skripts wurde dabei als
+Main-Methode innerhalb der Klasse beibehalten, um die neue
+Struktur weiterhin testen zu können.
+
+Darüber hinaus wurde das Skript \texttt{main.py} in
+\texttt{TaupunktMain.py} umbenannt.
+Die bisherige Main-Methode aus \texttt{DHT11.py}
+wurde anschließend in \texttt{TaupunktMain.py}
+übernommen.
+
+Zum Ende des Tages wurde die Ausgabe der Sensordaten
+vorübergehend wieder auf die Konsole zurückgesetzt,
+um die Fehlersuche zu vereinfachen.
+
+Zusätzlich wurde das Skript
+\texttt{TaupunktBerechnung.py} erstellt.
+Hierfür wurde zunächst die vorhandene
+Taupunktberechnung aus dem bereitgestellten GitHub-Repository
+von :contentReference[oaicite:0]{index=0}
+übernommen, um diese später an das eigene Projekt anzupassen.
+
+\subsubsection{Problem 1: Fehler im Skript \texttt{lcdDisplay.py}}
+
+Bei der Definition der Klasse \texttt{LcdDisplay}
+wurde der Doppelpunkt nach dem Klassennamen vergessen,
+wodurch ein Syntaxfehler entstand.
+
+Zusätzlich trat ein Fehler bei der Einrichtung der
+I\textsuperscript{2}C-Kommunikation auf.
+
+Das Skript wurde ursprünglich aus der JOY-PI-Anleitung
+übernommen. Dabei wurde festgestellt, dass in dem in der
+Anleitung abgebildeten Beispielcode die
+I\textsuperscript{2}C-Adresse des LCD-Displays fehlte.
+
+\textbf{Lösung}
+
+Der fehlende Doppelpunkt wurde ergänzt.
+Außerdem wurde die korrekte I\textsuperscript{2}C-Adresse
+manuell in den Code eingetragen.
+
+\subsubsection{Problem 2: Fehler im Skript \texttt{DHT11.py}}
+
+Es trat das Problem auf, dass das LCD-Display nicht korrekt
+initialisiert wurde, da versehentlich die Klasse selbst
+anstatt einer Instanz der Klasse gespeichert wurde.
+
+Zusätzlich wurde beim Erstellen der Klasse
+\texttt{dht11} vergessen, dass bereits ein Modul mit
+dem Namen \texttt{dht11} importiert wird.
+
+Dadurch überschrieb der Klassenname den Namen des
+importierten Moduls.
+
+\textbf{Lösung}
+
+Die Initialisierung des LCD-Displays wurde korrigiert,
+indem eine Instanz der Klasse \texttt{LcdDisplay}
+erstellt wurde.
+
+Außerdem wurde die Klasse in
+\texttt{dht11Sensor} umbenannt, damit sich
+Klassenname und Modulname nicht mehr gegenseitig
+überschreiben.
+
+\subsubsection{Nächste Schritte}
+
+In der nächsten Woche soll die Taupunktberechnung
+für Python angepasst und in das bestehende Projekt
+integriert werden.

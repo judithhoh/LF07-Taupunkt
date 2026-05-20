@@ -1,0 +1,91 @@
+\subsection{06.01.2026}
+
+\subsubsection{Ziel}
+
+Das Ziel des Tages war es, die Probleme aus Lektion 10 zu lösen,
+damit das LCD-Display zur Darstellung der Messdaten verwendet werden kann.
+
+\subsubsection{Durchgeführte Arbeiten}
+
+Zunächst wurde das benötigte Modul für die Ansteuerung des
+LCD-Displays identifiziert und installiert.
+
+Anschließend wurde überprüft, ob I\textsuperscript{2}C für die
+Kommunikation mit dem Display aktiviert ist. Danach wurde das Skript
+\texttt{lcd.py} erneut ausgeführt, um die Funktionalität des
+Displays zu testen.
+
+Zusätzlich wurde ein GitHub-Repository erstellt, um den Quellcode
+für die Taupunktlüftung zentral zu verwalten. Zum Test der
+GitHub-Funktionalität wurde versucht, die Skripte
+\texttt{dht\_11.py} und \texttt{lcd.py} direkt vom Raspberry Pi
+aus hochzuladen.
+
+\subsubsection{Problem 1: Modul \texttt{board} nicht gefunden}
+
+Beim Ausführen des Skripts \texttt{lcd.py} trat weiterhin die
+Fehlermeldung auf, dass das Modul \texttt{board} nicht gefunden
+werden konnte.
+
+\textbf{Lösung}
+
+Es stellte sich heraus, dass das benötigte Modul Bestandteil des
+Pakets \texttt{adafruit-blinka} ist.
+
+Nach der Installation von \texttt{adafruit-blinka} konnte das Modul
+erfolgreich importiert werden.
+
+\subsubsection{Problem 2: I\textsuperscript{2}C-Gerät nicht gefunden}
+
+Beim erneuten Ausführen des Skripts \texttt{lcd.py} trat die
+Fehlermeldung auf, dass kein I\textsuperscript{2}C-Gerät erkannt
+werden konnte.
+
+\textbf{Lösung}
+
+Zunächst wurde überprüft, ob die richtigen Pins verwendet wurden.
+Anschließend wurde kontrolliert, ob I\textsuperscript{2}C auf dem
+Raspberry Pi aktiviert ist.
+
+Nachdem I\textsuperscript{2}C aktiviert und der Raspberry Pi neu
+gestartet wurde, konnte das Skript erfolgreich ausgeführt werden.
+
+\subsubsection{Problem 3: GitHub-Authentifizierung}
+
+Es wurde ein GitHub-Repository erstellt, um die Skripte für die
+Taupunktlüftung zu verwalten und zu versionieren.
+
+Beim Versuch, die Skripte \texttt{dht\_11.py} und
+\texttt{lcd.py} vom Raspberry Pi aus hochzuladen, traten Probleme
+mit der GitHub-Authentifizierung auf.
+
+\textbf{Lösung}
+
+Die Einrichtung der GitHub-Authentifizierung konnte an diesem Tag
+noch nicht abgeschlossen werden. Bis zum nächsten Arbeitstag soll
+eine geeignete Authentifizierungsmethode eingerichtet werden.
+
+\subsubsection{Erkenntnisse}
+
+Um I\textsuperscript{2}C-Geräte erfolgreich anzusteuern, muss
+I\textsuperscript{2}C auf dem Raspberry Pi aktiviert sein.
+
+Die Aktivierung erfolgt über folgende Schritte:
+
+\begin{itemize}
+    \item \texttt{sudo raspi-config}
+    \item \texttt{Interfacing Options}
+    \item \texttt{I2C}
+    \item \texttt{Yes}
+\end{itemize}
+
+
+\subsubsection{Nächste Schritte}
+
+Bis zur nächsten Woche soll die GitHub-Authentifizierung
+eingerichtet werden, damit die Skripte erfolgreich hochgeladen
+werden können.
+
+In der nächsten Woche sollen die bestehenden Skripte weiterentwickelt
+werden, um Messdaten auf dem LCD-Display darzustellen und die
+Auswertung der Sensordaten vorzubereiten.

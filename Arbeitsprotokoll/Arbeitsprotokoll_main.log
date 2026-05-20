@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.5.19)  20 MAY 2026 07:04
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.5.19)  20 MAY 2026 23:51
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/judith/PycharmProjects/LF07-Taupunkt/Arbeitsprotokoll/Arbeitsprotokoll_main.tex
@@ -551,47 +551,127 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 70.
-<bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg, id=80, 1241.1168pt x 828.2142pt>
+<bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg, id=418, 1241.1168pt x 828.2142pt>
 File: bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg Graphic file (type jpg)
 <use bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg>
 Package luatex.def Info: bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg  used on input line 78.
 (luatex.def)             Requested size: 241.84843pt x 161.38106pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg>] (./Arbeitsprotokoll_main.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./bilder/Buenting_Unternehmensgruppe_Schriftzug.jpg>] (./Arbeitsprotokoll_main.toc
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1] [2])
 \tf@toc=\write4
 
 \openout4 = Arbeitsprotokoll_main.toc
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1] (./kapitel/einleitung.tex) (./kapitel/arbeitsprotokoll.tex (./tage/2025-11-11.tex) [2] (./tage/2025-11-18.tex
-Overfull \hbox (18.27829pt too wide) in paragraph at lines 8--17
-\TU/Arial(0)/m/n/12 PI zu in-ter-agie-ren und die Ein-rich-tung ge-mäß der Schrit-te in \TU/lmtt/m/n/12 RaspberryPi_erste_Schritte.docx
+ [3] (./kapitel/einleitung.tex) [4] (./kapitel/arbeitsprotokoll.tex (./tage/2025-11-11.tex) [5] (./tage/2025-11-18.tex) [6] (./tage/2025-11-25.tex) [7] (./tage/2025-12-02.tex
+Overfull \hbox (13.32266pt too wide) in paragraph at lines 8--12
+\TU/Arial(0)/m/n/12 Für den IR-Sensor wur-de die Bi-blio-thek \TU/lmtt/m/n/12 IR-Remote-Receiver-Python-Module \TU/Arial(0)/m/n/12 von „owainm713“
  []
 
-) [3] (./tage/2025-11-25.tex) [4]) (./Arbeitsprotokoll_main.aux)
+
+Overfull \hbox (8.57266pt too wide) in paragraph at lines 8--12
+\TU/Arial(0)/m/n/12 in-stal-liert. Zu-sätz-lich wur-den wei-te-re be-nö-tig-te Bi-blio-the-ken in der vir-tu-el-len Python-Umgebung
+ []
+
+
+Overfull \hbox (98.63803pt too wide) in paragraph at lines 57--60
+[]| \TU/Arial(0)/m/n/12 Bei-spie-le: \TU/lmtt/m/n/12 GPIO.setup(pinnummer, GPIO.IN, pull_up_down=GPIO.PUD_UP) GPIO.setup(pinnummer,
+ []
+
+[8]
+Overfull \hbox (40.061pt too wide) in paragraph at lines 60--64
+[]\TU/Arial(0)/m/n/12 Output-Pins kön-nen mit \TU/lmtt/m/n/12 GPIO.output(pinnummer, GPIO.HIGH) \TU/Arial(0)/m/n/12 oder \TU/lmtt/m/n/12 GPIO.output(pinnummer,
+ []
+
+
+Overfull \hbox (4.5203pt too wide) in paragraph at lines 69--72
+[]\TU/Arial(0)/m/n/12 Beim Ver-las-sen des Pro-gramms soll-te mit \TU/lmtt/m/n/12 GPIO.cleanup() \TU/Arial(0)/m/n/12 ei-ne Rück-set-zung der GPIO-
+ []
+
+) [9] (./tage/2025-12-09.tex
+Overfull \hbox (16.34256pt too wide) in paragraph at lines 30--31
+[]\TU/lmtt/m/n/12 Requirement already satisfied: dht11 in ./my-venv/lib/python3.13/site-packages 
+ []
+
+
+Overfull \hbox (34.88254pt too wide) in paragraph at lines 32--33
+[]\TU/lmtt/m/n/12 Requirement already satisfied: RPi.GPIO in ./my-venv/lib/python3.13/site-packages 
+ []
+
+[10]
+Overfull \hbox (212.85867pt too wide) in paragraph at lines 84--88
+[]\TU/Arial(0)/m/n/12 Für die Steue-rung des LCD-Displays müs-sen die Mo-du-le \TU/lmtt/m/n/12 time\TU/Arial(0)/m/n/12 , \TU/lmtt/m/n/12 board\TU/Arial(0)/m/n/12 , \TU/lmtt/m/n/12 busio \TU/Arial(0)/m/n/12 und \TU/lmtt/m/n/12 adafruit_character_lcd.character_lcd_i2c
+ []
+
+) [11] (./tage/2026-01-06.tex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 24.
+
+Overfull \hbox (0.33115pt too wide) in paragraph at lines 32--34
+[]\TU/Arial(0)/m/n/12 Es stell-te sich her-aus, dass das be-nö-tig-te Mo-dul Be-stand-teil des Pa-kets \TU/lmtt/m/n/12 adafruit-blinka
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 38.
+
+[12]) [13] (./tage/2026-01-13.tex) [14] (./tage/2026-01-20.tex [15]
+Overfull \hbox (31.40579pt too wide) in paragraph at lines 94--97
+[]\TU/Arial(0)/m/n/12 Die In-itia-li-sie-rung des LCD-Displays wur-de kor-ri-giert, in-dem ei-ne In-stanz der Klas-se \TU/lmtt/m/n/12 LcdDisplay
+ []
+
+) [16] (./tage/2026-01-27.tex
+Overfull \hbox (79.08652pt too wide) in paragraph at lines 18--22
+[]\TU/Arial(0)/m/n/12 Die Funk-tio-na-li-tät wur-de da-bei auf die bei-den Da-tei-en \TU/lmtt/m/n/12 scann_berechnen.py \TU/Arial(0)/m/n/12 und \TU/lmtt/m/n/12 taupunkt_berechnen.py
+ []
+
+) [17] (./tage/2026-02-27.tex) [18] (./tage/2026-03-10.tex) [19] (./tage/2026-03-17.tex
+Overfull \hbox (6.05508pt too wide) in paragraph at lines 43--46
+[]\TU/Arial(0)/m/n/12 Es wur-de fest-ge-stellt, dass im ver-wen-de-ten GPIO-Modus nicht die phy-si-sche Pin-Nummer,
+ []
+
+
+Overfull \hbox (0.20468pt too wide) in paragraph at lines 54--57
+\TU/Arial(0)/m/n/12 Beim Aus-füh-ren der Tau-punkt-be-rech-nung trat die Feh-ler-mel-dung \TU/lmtt/m/n/12 ValueError: math domain
+ []
+
+
+Overfull \hbox (0.5043pt too wide) in paragraph at lines 76--80
+\TU/Arial(0)/m/n/12 Es wur-de fest-ge-stellt, dass bei Ver-wen-dung des BCM-Modus aus-schließ-lich GPIO-Nummern
+ []
+
+[20]) [21] (./tage/2026-04-28.tex [22]) [23] (./tage/2026-05-04.tex) [24] (./tage/2026-05-05.tex) [25] [26] (./tage/2026-05-11.tex) [27] (./tage/2026-05-12.tex) [28]) (./kapitel/material.tex) [29] (./Arbeitsprotokoll_main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Arbeitsprotokoll_main.out' has not changed.
-(rerunfilecheck)             Checksum: 74C9B11642F4FD3C31DB2FDEFA935B42;2890.
+(rerunfilecheck)             Checksum: 52725F15A83F160D9E9B97AAD7905C43;16950.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14754 strings out of 476553
+ 15125 strings out of 476553
  125027,1977958 words of node,token memory allocated
  464 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 5 glue, 3 kern, 1 glyph, 7 attribute, 52 glue_spec, 5 attribute_list, 1 write nodes
-   avail lists: 1:2,2:730,3:202,4:156,5:178,6:59,7:4202,8:2,9:333,10:6,11:452
- 36448 multiletter control sequences out of 65536+600000
- 46 fonts using 5538951 bytes
- 79i,6n,89p,375b,379s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/msttcorefonts/Arial.ttf></usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf>
-Output written on Arbeitsprotokoll_main.pdf (5 pages, 8676464 bytes).
+   avail lists: 1:2,2:1823,3:490,4:400,5:440,6:147,7:6176,8:42,9:810,10:7,11:673
+ 36620 multiletter control sequences out of 65536+600000
+ 48 fonts using 5886391 bytes
+ 79i,6n,89p,502b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/msttcorefonts/Arial.ttf></usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf>
+Output written on Arbeitsprotokoll_main.pdf (30 pages, 8738907 bytes).
 
-PDF statistics: 149 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 131072)
- 153 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 693 PDF objects out of 1000 (max. 8388607)
+ 641 compressed objects within 7 object streams
+ 134 named destinations out of 1000 (max. 131072)
+ 825 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,0 +1,51 @@
+\subsection{13.01.2026 (Freistunde)}
+
+\subsubsection{Ziel}
+
+Ziel des Tages war es, die Skripte für die Ansteuerung des LCD-Displays
+und die Erfassung der Sensordaten in das GitHub-Repository hochzuladen
+sowie den Quellcode mithilfe von Klassen und Funktionen besser zu
+strukturieren, um die Übersichtlichkeit und Wartbarkeit zu verbessern.
+
+\subsubsection{Durchgeführte Arbeiten}
+
+Zunächst wurden die Skripte \texttt{lcd.py} und
+\texttt{dht\_11.py} in das GitHub-Repository hochgeladen.
+
+Zusätzlich wurde das Skript \texttt{main.py} erstellt, welches
+zukünftig die Hauptlogik der Taupunktlüftung steuern soll.
+
+Das Skript \texttt{lcd.py} wurde anschließend in die Klasse
+\texttt{LcdDisplay} umstrukturiert, um die Ansteuerung des
+LCD-Displays zu kapseln und den Code übersichtlicher aufzubauen.
+
+Weiterhin wurde der ursprüngliche Ablauf des Skripts als
+Main-Methode innerhalb von \texttt{lcdDisplay.py} beibehalten,
+damit die neue Struktur weiterhin getestet werden kann.
+
+Darüber hinaus wurden die verschiedenen Aktionen des Skripts in
+eigene Funktionen ausgelagert, um die Lesbarkeit und Wartbarkeit
+des Codes zu verbessern. Diese Funktionen wurden anschließend
+innerhalb der Main-Methode aufgerufen.
+
+Ein praktischer Test der Änderungen war an diesem Tag jedoch nicht
+möglich, da die JOY-PI-Hardware nicht zur Verfügung stand.
+
+\subsubsection{Erkenntnisse}
+
+Es wurde entschieden, die Skripte zukünftig nicht direkt vom
+Raspberry Pi aus hochzuladen, sondern stattdessen einen lokalen
+Computer für die Verwaltung des GitHub-Repositories zu verwenden.
+
+Dadurch wird die Bearbeitung des Quellcodes erleichtert und das
+Problem mit der GitHub-Authentifizierung auf dem Raspberry Pi
+muss nicht weiter berücksichtigt werden.
+
+Zusätzlich wurde festgestellt, dass eine Aufteilung des Programms
+in Klassen und Funktionen die Übersichtlichkeit des Projekts
+deutlich verbessert.
+
+\subsubsection{Nächste Schritte}
+
+In der nächsten Unterrichtseinheit sollen die überarbeiteten
+Skripte auf dem JOY-PI getestet und weiterentwickelt werden.

@@ -1,0 +1,89 @@
+\subsection{17.03.2026}
+
+\subsubsection{Ziel}
+
+Ziel des Tages war es, den zweiten DHT11-Sensor
+anzuschließen und in die Taupunktberechnung zu integrieren.
+
+\subsubsection{Durchgeführte Arbeiten}
+
+Zunächst wurde der zweite DHT11-Sensor an Pin 37
+(GPIO 26) angeschlossen und die Verkabelung überprüft.
+
+Anschließend wurde in der Datei
+\texttt{dht11\_jh.py} die Klasse
+\texttt{dht11Sensor} erweitert, sodass die
+GPIO-Pin-Nummer beim Erstellen eines Objekts
+übergeben werden kann.
+
+Danach wurde in
+\texttt{taupunkt\_main.py} ein zweiter
+Sensor mit der entsprechenden GPIO-Nummer
+initialisiert.
+
+Zusätzlich wurde eine Konsolenausgabe ergänzt,
+welche bei ungültigen oder noch nicht verfügbaren
+Messwerten die Meldung „messung...“
+ausgibt.
+
+Zum Ende des Tages wurde die bestehende
+Taupunktberechnung in die Hauptlogik integriert.
+
+\subsubsection{Problem 1: Falsche GPIO-Pin-Nummer}
+
+Zunächst wurde für den zweiten Sensor die
+physische Pin-Nummer 37 direkt verwendet.
+
+Dies führte dazu, dass sich die Verbindung
+über VNC aufhing und der Raspberry Pi erst nach
+einem Neustart wieder erreichbar war.
+
+\textbf{Lösung}
+
+Es wurde festgestellt, dass im verwendeten
+GPIO-Modus nicht die physische Pin-Nummer,
+sondern die GPIO-Nummer verwendet werden muss.
+
+Da im Projekt der BCM-Modus genutzt wird,
+musste für den Sensor die GPIO-Nummer 26
+anstatt der physischen Pin-Nummer 37 verwendet
+werden.
+
+\subsubsection{Problem 2: Fehler in der Taupunktberechnung}
+
+Beim Ausführen der Taupunktberechnung trat die
+Fehlermeldung
+\texttt{ValueError: math domain error}auf.
+
+Der Fehler entstand bei der Berechnung mit
+\texttt{log10(...)}.
+
+\textbf{Lösung}
+
+Es wurde festgestellt, dass ungültige oder
+unvollständige Messwerte an die Berechnung
+übergeben wurden.
+
+Dadurch entstand ein mathematisch nicht
+zulässiger Wert innerhalb der Logarithmusfunktion.
+
+Die Ursache soll in der nächsten
+Unterrichtseinheit weiter untersucht und
+behoben werden.
+
+\subsubsection{Erkenntnisse}
+
+Es wurde festgestellt, dass bei Verwendung des
+BCM-Modus ausschließlich GPIO-Nummern und
+nicht die physischen Pin-Nummern verwendet
+werden dürfen.
+
+Außerdem wurde deutlich, dass Sensordaten vor
+der Weiterverarbeitung auf gültige Werte
+überprüft werden müssen, um Fehler bei
+mathematischen Berechnungen zu vermeiden.
+
+\subsubsection{Nächste Schritte}
+
+Als nächster Schritt soll die Taupunktberechnung
+fehlerfrei umgesetzt werden.

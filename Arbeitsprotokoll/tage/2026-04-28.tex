@@ -1,0 +1,124 @@
+\subsection{28.04.2026}
+
+\subsubsection{Ziel}
+
+Ziel des Tages war es, die Taupunktberechnung
+funktionsfähig umzusetzen.
+
+Zusätzlich sollte eine Datenbank vorbereitet werden,
+um die Messwerte langfristig zu speichern.
+Außerdem sollte recherchiert werden, wie der Lüfter
+angeschlossen und angesteuert werden kann.
+
+\subsubsection{Durchgeführte Arbeiten}
+
+Zunächst wurden mehrere Probleme innerhalb der
+Taupunktberechnung identifiziert, welche zu
+Fehlern während der Berechnung führten.
+
+Zur Fehlersuche wurden verschiedene
+Zwischenergebnisse auf der Konsole ausgegeben,
+um die genaue Fehlerquelle besser eingrenzen zu können.
+
+Zusätzlich wurde die Ausgabe bei ungültigen
+Messwerten angepasst.
+Die Meldung „Messung läuft...“ wird nun nur noch
+alle 20 ungültigen Messwerte ausgegeben.
+Nach 100 ungültigen Messversuchen wird der
+Vorgang mit der Meldung
+„Messung war nicht möglich“
+abgebrochen.
+
+Darüber hinaus wurden einzelne Zwischenergebnisse
+der Taupunktberechnung validiert.
+Falls ein mathematisch ungültiger Wert entsteht,
+wird nun eine Fehlermeldung ausgegeben und
+der Wert 0 zurückgegeben.
+
+Ein Teil der Fehler innerhalb der
+Taupunktberechnung konnte dadurch bereits behoben
+werden.
+
+Zusätzlich wurde SQLite als mögliche
+Datenbanklösung ausgewählt und erste Tests zur
+Verwendung durchgeführt.
+
+Des Weiteren wurde recherchiert, wie der Lüfter
+angeschlossen und über den Raspberry Pi gesteuert
+werden kann.
+
+Nach dem Unterricht wurde zusätzlich weiter an
+einer Lösung für den Anschluss des Lüfters gearbeitet.
+
+\subsubsection{Problem 1: Fehler in der Taupunktberechnung}
+
+Zunächst trat weiterhin ein Fehler bei der
+Berechnung mit \texttt{log10()} auf.
+
+Zusätzlich wurden Probleme beim Zusammensetzen
+von Zeichenketten für die Konsolenausgabe
+festgestellt.
+
+\textbf{Lösung}
+
+Die Konstante \texttt{c} wurde von einer
+Klassenvariable zu einer Instanzvariable der
+Klasse \texttt{TaupunktBerechnung} geändert.
+
+Außerdem wurde festgestellt, dass numerische
+Werte vor der Ausgabe in der Konsole zunächst
+mit \texttt{str()} in Zeichenketten umgewandelt
+werden müssen.
+
+Darüber hinaus wurde erkannt, dass einige
+DHT11-Sensorobjekte mehrfach und unnötig in
+\texttt{Taupunkt\_main.py} erstellt wurden.
+
+Zusätzlich wurde versehentlich das ursprüngliche
+Modul \texttt{dht11} anstelle der eigenen
+Implementierung aus \texttt{dht11\_jh}
+importiert.
+
+Diese Fehler wurden korrigiert.
+
+\subsubsection{Problem 2: Ungewöhnliche Messwerte}
+
+Die gemessenen Temperaturwerte erschienen
+unerwartet niedrig.
+
+\textbf{Lösung}
+
+An diesem Tag konnte noch keine eindeutige
+Ursache für die fehlerhaften Messwerte gefunden
+werden.
+
+\subsubsection{Problem 3: Dynamische Datenbank-Statements}
+
+Es wurde versucht, die SQL-Statements dynamischer
+aufzubauen, um doppelte Codeabschnitte zu vermeiden.
+
+\textbf{Lösung}
+
+Für dieses Problem konnte an diesem Tag noch
+keine endgültige Lösung gefunden werden.
+
+\subsubsection{Erkenntnisse}
+
+Es wurde deutlich, dass mathematische
+Berechnungen umfangreiche Validierungen der
+Zwischenergebnisse benötigen, um Fehler frühzeitig
+abzufangen.
+
+Außerdem wurde erkannt, dass SQLite eine
+geeignete Möglichkeit darstellt, Sensordaten
+dauerhaft lokal auf dem Raspberry Pi zu speichern.
+
+\subsubsection{Nächste Schritte}
+
+Als nächster Schritt soll untersucht werden,
+wie SQL-Statements mit Parametern dynamischer
+gestaltet werden können.
+
+Außerdem soll der Lüfter korrekt angeschlossen,
+angesteuert und in die bestehende Hauptlogik
+integriert werden.

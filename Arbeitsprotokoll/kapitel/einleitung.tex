@@ -1,10 +1,30 @@
 \section{Einleitung}
 
-Es soll ein Delta Taupunktlüftung per Raspberry Pi b4 realisiert werden.
-Delta Taupunktlüftung:
-Luft kann mehr Feuchtigkeit aufnehmen je wärmer diese ist.
-Taupunkt: abhängig von Temperatur und Luftfeuchtigkeit wird berechnet, wann das Wasser kondensiert (Temperatur).
-Luftfeuchtigkeit soll raus => innen 5,6 °C <- außen 15,3 => abkphlen bis außen geringer als innen
-2 Senoren => Temperat + Luftfeuchtigkeit => Delta berechen
-Lüfter an wenn nach berechung sinnvoll
-Daten (Sensor, Ergenbisse) In Datenbank speichern und auf Webside darstellen
+In diesem Projekt soll eine Taupunktlüftung mithilfe eines Raspberry Pi
+realisiert werden. Ziel des Projekts ist es, die Luftfeuchtigkeit in einem
+Raum zu regulieren, um ein angenehmes Raumklima zu schaffen und
+Schimmelbildung vorzubeugen. 
+
+Die Akzeptanzkriterien für das Projekt sind:
+\begin{itemize}
+    \item Die Temperatur und Luftfeuchtigkeit sollen über zwei Sensoren erfasst werden.
+    
+    \item Für beide Messpunkte soll jeweils die Taupunkttemperatur berechnet werden.
+    
+    \item Anhand des Taupunkt-Deltas soll entschieden werden, ob der Lüfter aktiviert wird.
+    
+    \item Alle erfassten Daten sollen in einer Datenbank gespeichert werden.
+    
+    \item Die Messdaten sollen auf einer Webseite dargestellt werden.
+    
+    \item Für den Remote-Zugriff soll eine VNC-Verbindung zum Raspberry Pi eingerichtet werden.
+\end{itemize}
+
+
+Die Nutzung weiterer Komponenten des bereitgestellten JOY-PI,
+wie beispielsweise des Displays, ist optional und nicht zwingend erforderlich.
+
+Des Weiteren kann die Webseite um zusätzliche Funktionen erweitert werden,
+beispielsweise um die Möglichkeit, die Lüftungssteuerung manuell zu
+überschreiben oder historische Messdaten anzuzeigen.
+

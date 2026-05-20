@@ -1,20 +1,86 @@
 \subsection{02.12.2025}
 
 \subsubsection{Ziel}
-Erste Lektionen aus der JOY-PI Anleitung testen
+Das Ziel des Tages war es, die restlichen Bibliotheken zu installieren
+und anschließend die ersten Lektionen der JOY-PI-Anleitung durchzuführen.
 
 \subsubsection{Durchgeführte Arbeiten}
+Für den IR-Sensor wurde die Bibliothek
+\texttt{IR-Remote-Receiver-Python-Module} von „owainm713“
+installiert. Zusätzlich wurden weitere benötigte Bibliotheken in der
+virtuellen Python-Umgebung installiert.
+
+Anschließend wurde der Quellcode der Lektion 1 (Verwenden des Buzzers für Warntöne) der
+JOY-PI-Anleitung analysiert. Danach wurden die Lektionen 2 (Buzzer mit Taste steuern) 
+und 3 (Wie ein Relais funktioniert und wie man es steuert)
+durchgeführt, um zu überprüfen, ob die Installation der Bibliotheken
+erfolgreich war und um die Funktionsweise der GPIO-Pins besser zu
+verstehen.
+
+Zusätzlich wurden die Lektionen 4 (Senden Sie ein Vibrationssignal) und 5 
+(Geräusche mit dem Schlalsensor erkennen) betrachtet, jedoch nicht aktiv
+durchgeführt. Ziel war hierbei hauptsächlich das Verständnis des
+Programmaufbaus und der verwendeten Funktionen.
+
+
+\subsubsection{Problem 1: IR-Romote-Receiver-Python-Module}
+Die Installation der Bibliothek für den IR-Sensor war zunächst auch nach
+mehreren Versuchen nicht erfolgreich. Währenddessen wurde unter anderem
+eine Anmeldung bei GitHub gefordert.
+
+\textbf{Lösung}
+Es stellte sich heraus, dass beim Abtippen des Installationsbefehls ein
+Tippfehler entstanden war. Nach der Korrektur des Befehls konnte die
+Bibliothek erfolgreich installiert werden.
+
+\subsubsection{Erkentnisse}
+Es wurde festgestellt, dass die in der Anleitung angegebenen Befehle zur
+systemweiten Installation, beispielsweise
+\texttt{sudo python3 install <package>}, nicht innerhalb der virtuellen
+Umgebung verwendet werden sollten.
+
+Stattdessen müssen die Bibliotheken innerhalb der aktivierten virtuellen
+Umgebung mit dem Befehl \texttt{pip install <package>} installiert werden.
+
+Über den Aufbau von Python-Code wurden folgende Erkenntnisse gewonnen:
 \begin{itemize}
-    \item notwenige Software Libary auf JOY-PI rundergeladen und installiert
-    \item venv Umgebeung eingerichtet
+    \item Zur Nutzung der GPIO-Pins des Raspberry Pi muss die Bibliothek
+    \texttt{RPI.GPIO} importiert werden.
+    \item Einer Variable kann die Nummer eines GPIO-Pins zugewiesen
+    werden, um diesen im Programm anzusprechen.
+   \item Es muss ein GPIO-Modus festgelegt werden, damit die Pins korrekt
+    angesprochen werden können.
+    \subitem Beispiel:
+    \texttt{GPIO.setmode(GPIO.BCM)}
+    \item Es muss definiert werden, ob ein Pin als Input oder Output
+    verwendet werden soll.
+    \subitem Beispiele:
+    \texttt{GPIO.setup(pinnummer, GPIO.IN, pull\_up\_down=GPIO.PUD\_UP)}
+    \texttt{GPIO.setup(pinnummer, GPIO.OUT)}
+    \item Output-Pins können mit
+    \texttt{GPIO.output(pinnummer, GPIO.HIGH)} oder
+    \texttt{GPIO.output(pinnummer, GPIO.LOW)}
+    aktiviert beziehungsweise deaktiviert werden
+    \item Mit \texttt{GPIO.input(pinnummer)} können Werte von Input-Pins
+    abgefragt werden.
+    \item Für gewollte Endlosschleifen wird häufig ein Try-Except-Block
+    verwendet, damit die Schleife mit einem KeyboardInterrupt
+    (\texttt{Strg + C}) beendet werden kann.
+    \item Beim Verlassen des Programms sollte mit
+    \texttt{GPIO.cleanup()} eine Rücksetzung der GPIO-Pins erfolgen,
+    damit diese nicht aktiv bleiben.
 \end{itemize}
-\subsubsection{Aufgetretene Probleme}
+
+Über Relays wurden folgende Erkenntnisse gewonnen:
+
 \begin{itemize}
-    \item python Libyry heruderladen: error: externel-manager-enviroment
-    \end{itemize}
-\subsubsection{Lösungen}
-\begin{itemize}
-    \item Python soll nicht systemweit installiert werden => Umgebeun nutzen
+    \item Bei der Nutzung von NC + CO wird der Stromkreis geschlossen,
+    wenn \texttt{GPIO.LOW} anliegt.
+    \item Bei der Nutzung von NO + CO wird der Stromkreis geschlossen,
+    wenn \texttt{GPIO.HIGH} anliegt.
 \end{itemize}
+
 \subsubsection{Nächste Schritte}
-weiter notwendige Software + Liberys installieren
+Als nächster Schritt sollen weitere Lektionen der JOY-PI-Anleitung
+angesehen und gegebenenfalls durchgeführt werden, um das Verständnis
+der GPIO-Pins und ihrer Ansteuerung weiter zu vertiefen.

@@ -1,20 +1,104 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
-\contentsline {section}{\numberline {2}Arbeitsprotokoll}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}11.11.2025}{2}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Ziel}{2}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Durchgeführte Arbeiten}{2}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Problem 1: Fehlendes Ladekabel}{2}{subsubsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.4}Problem 2: Nicht benötigte Komponenten}{2}{subsubsection.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.1.5}Nächste Schritte}{2}{subsubsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.2}18.11.2025}{3}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Ziel}{3}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Durchgeführte Arbeiten}{3}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Problem 1: Tastaturverbindungsprobleme}{3}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Problem 2: Menüaufbau}{3}{subsubsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.3}25.11.2025}{4}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Ziel}{4}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Durchgeführte Arbeiten}{4}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Aufgetretene Probleme}{4}{subsubsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Lösungen}{4}{subsubsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Nächste Schritte}{4}{subsubsection.2.3.5}%
+\contentsline {section}{\numberline {1}Einleitung}{4}{section.1}%
+\contentsline {section}{\numberline {2}Arbeitsprotokoll}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}11.11.2025}{5}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Ziel}{5}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Durchgeführte Arbeiten}{5}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Problem 1: Fehlendes Ladekabel}{5}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Problem 2: Nicht benötigte Komponenten}{5}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Nächste Schritte}{5}{subsubsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.2}18.11.2025}{6}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Ziel}{6}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Durchgeführte Arbeiten}{6}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Problem 1: Tastaturverbindungsprobleme}{6}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Problem 2: Menüaufbau}{6}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}25.11.2025}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Ziel}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Durchgeführte Arbeiten}{7}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Problem 1: Fehler bei der Installation von Python-Bibliotheken}{7}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Nächste Schritte}{7}{subsubsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.4}02.12.2025}{8}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Ziel}{8}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Durchgeführte Arbeiten}{8}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Problem 1: IR-Romote-Receiver-Python-Module}{8}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Erkentnisse}{8}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}Nächste Schritte}{9}{subsubsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.5}09.12.2025}{10}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Ziel}{10}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Durchgeführte Arbeiten}{10}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Problem 1: Ausführung der Lektion 7}{10}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Problem 2: Ausführung der Lektion 10}{10}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.5}Erkenntnisse}{10}{subsubsection.2.5.5}%
+\contentsline {subsubsection}{\numberline {2.5.6}Nächste Schritte}{11}{subsubsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.6}06.01.2026}{12}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Ziel}{12}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Durchgeführte Arbeiten}{12}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Problem 1: Modul \texttt {board} nicht gefunden}{12}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}Problem 2: I\textsuperscript {2}C-Gerät nicht gefunden}{12}{subsubsection.2.6.4}%
+\contentsline {subsubsection}{\numberline {2.6.5}Problem 3: GitHub-Authentifizierung}{12}{subsubsection.2.6.5}%
+\contentsline {subsubsection}{\numberline {2.6.6}Erkenntnisse}{13}{subsubsection.2.6.6}%
+\contentsline {subsubsection}{\numberline {2.6.7}Nächste Schritte}{13}{subsubsection.2.6.7}%
+\contentsline {subsection}{\numberline {2.7}13.01.2026 (Freistunde)}{14}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Ziel}{14}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}Durchgeführte Arbeiten}{14}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Erkenntnisse}{14}{subsubsection.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.7.4}Nächste Schritte}{14}{subsubsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.8}20.01.2026}{15}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}Ziel}{15}{subsubsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.2}Durchgeführte Arbeiten}{15}{subsubsection.2.8.2}%
+\contentsline {subsubsection}{\numberline {2.8.3}Problem 1: Fehler im Skript \texttt {lcdDisplay.py}}{15}{subsubsection.2.8.3}%
+\contentsline {subsubsection}{\numberline {2.8.4}Problem 2: Fehler im Skript \texttt {DHT11.py}}{15}{subsubsection.2.8.4}%
+\contentsline {subsubsection}{\numberline {2.8.5}Nächste Schritte}{16}{subsubsection.2.8.5}%
+\contentsline {subsection}{\numberline {2.9}27.01.2026 (Freistunde)}{17}{subsection.2.9}%
+\contentsline {subsubsection}{\numberline {2.9.1}Ziel}{17}{subsubsection.2.9.1}%
+\contentsline {subsubsection}{\numberline {2.9.2}Durchgeführte Arbeiten}{17}{subsubsection.2.9.2}%
+\contentsline {subsubsection}{\numberline {2.9.3}Erkenntnisse}{17}{subsubsection.2.9.3}%
+\contentsline {subsubsection}{\numberline {2.9.4}Nächste Schritte}{17}{subsubsection.2.9.4}%
+\contentsline {subsection}{\numberline {2.10}27.02.2026}{18}{subsection.2.10}%
+\contentsline {subsubsection}{\numberline {2.10.1}Ziel}{18}{subsubsection.2.10.1}%
+\contentsline {subsubsection}{\numberline {2.10.2}Durchgeführte Arbeiten}{18}{subsubsection.2.10.2}%
+\contentsline {subsubsection}{\numberline {2.10.3}Nächste Schritte}{18}{subsubsection.2.10.3}%
+\contentsline {subsection}{\numberline {2.11}10.03.2026}{19}{subsection.2.11}%
+\contentsline {subsubsection}{\numberline {2.11.1}Ziel}{19}{subsubsection.2.11.1}%
+\contentsline {subsubsection}{\numberline {2.11.2}Durchgeführte Arbeiten}{19}{subsubsection.2.11.2}%
+\contentsline {subsubsection}{\numberline {2.11.3}Problem 1: Fehlende Internetverbindung}{19}{subsubsection.2.11.3}%
+\contentsline {subsubsection}{\numberline {2.11.4}Problem 2: Keine Git-Commits möglich}{19}{subsubsection.2.11.4}%
+\contentsline {subsubsection}{\numberline {2.11.5}Nächste Schritte}{19}{subsubsection.2.11.5}%
+\contentsline {subsection}{\numberline {2.12}17.03.2026}{20}{subsection.2.12}%
+\contentsline {subsubsection}{\numberline {2.12.1}Ziel}{20}{subsubsection.2.12.1}%
+\contentsline {subsubsection}{\numberline {2.12.2}Durchgeführte Arbeiten}{20}{subsubsection.2.12.2}%
+\contentsline {subsubsection}{\numberline {2.12.3}Problem 1: Falsche GPIO-Pin-Nummer}{20}{subsubsection.2.12.3}%
+\contentsline {subsubsection}{\numberline {2.12.4}Problem 2: Fehler in der Taupunktberechnung}{20}{subsubsection.2.12.4}%
+\contentsline {subsubsection}{\numberline {2.12.5}Erkenntnisse}{20}{subsubsection.2.12.5}%
+\contentsline {subsubsection}{\numberline {2.12.6}Nächste Schritte}{21}{subsubsection.2.12.6}%
+\contentsline {subsection}{\numberline {2.13}28.04.2026}{22}{subsection.2.13}%
+\contentsline {subsubsection}{\numberline {2.13.1}Ziel}{22}{subsubsection.2.13.1}%
+\contentsline {subsubsection}{\numberline {2.13.2}Durchgeführte Arbeiten}{22}{subsubsection.2.13.2}%
+\contentsline {subsubsection}{\numberline {2.13.3}Problem 1: Fehler in der Taupunktberechnung}{22}{subsubsection.2.13.3}%
+\contentsline {subsubsection}{\numberline {2.13.4}Problem 2: Ungewöhnliche Messwerte}{23}{subsubsection.2.13.4}%
+\contentsline {subsubsection}{\numberline {2.13.5}Problem 3: Dynamische Datenbank-Statements}{23}{subsubsection.2.13.5}%
+\contentsline {subsubsection}{\numberline {2.13.6}Erkenntnisse}{23}{subsubsection.2.13.6}%
+\contentsline {subsubsection}{\numberline {2.13.7}Nächste Schritte}{23}{subsubsection.2.13.7}%
+\contentsline {subsection}{\numberline {2.14}04.05.2026 (Freistunde)}{24}{subsection.2.14}%
+\contentsline {subsubsection}{\numberline {2.14.1}Ziel}{24}{subsubsection.2.14.1}%
+\contentsline {subsubsection}{\numberline {2.14.2}Durchgeführte Arbeiten}{24}{subsubsection.2.14.2}%
+\contentsline {subsubsection}{\numberline {2.14.3}Erkenntnisse}{24}{subsubsection.2.14.3}%
+\contentsline {subsubsection}{\numberline {2.14.4}Nächste Schritte}{24}{subsubsection.2.14.4}%
+\contentsline {subsection}{\numberline {2.15}05.05.2026}{25}{subsection.2.15}%
+\contentsline {subsubsection}{\numberline {2.15.1}Ziel}{25}{subsubsection.2.15.1}%
+\contentsline {subsubsection}{\numberline {2.15.2}Durchgeführte Arbeiten}{25}{subsubsection.2.15.2}%
+\contentsline {subsubsection}{\numberline {2.15.3}Problem 1: Fehler in der Datenbank}{25}{subsubsection.2.15.3}%
+\contentsline {subsubsection}{\numberline {2.15.4}Problem 2: Probleme mit Relais und Lüfter}{25}{subsubsection.2.15.4}%
+\contentsline {subsubsection}{\numberline {2.15.5}Erkenntnisse}{25}{subsubsection.2.15.5}%
+\contentsline {subsubsection}{\numberline {2.15.6}Nächste Schritte}{26}{subsubsection.2.15.6}%
+\contentsline {subsection}{\numberline {2.16}11.05.2026 (Freistunde)}{27}{subsection.2.16}%
+\contentsline {subsubsection}{\numberline {2.16.1}Ziel}{27}{subsubsection.2.16.1}%
+\contentsline {subsubsection}{\numberline {2.16.2}Durchgeführte Arbeiten}{27}{subsubsection.2.16.2}%
+\contentsline {subsubsection}{\numberline {2.16.3}Erkenntnisse}{27}{subsubsection.2.16.3}%
+\contentsline {subsubsection}{\numberline {2.16.4}Nächste Schritte}{27}{subsubsection.2.16.4}%
+\contentsline {subsection}{\numberline {2.17}12.05.2026}{28}{subsection.2.17}%
+\contentsline {subsubsection}{\numberline {2.17.1}Ziel}{28}{subsubsection.2.17.1}%
+\contentsline {subsubsection}{\numberline {2.17.2}Durchgeführte Arbeiten}{28}{subsubsection.2.17.2}%
+\contentsline {subsubsection}{\numberline {2.17.3}Erkenntnisse}{28}{subsubsection.2.17.3}%
+\contentsline {subsubsection}{\numberline {2.17.4}Nächste Schritte}{28}{subsubsection.2.17.4}%
+\contentsline {section}{\numberline {3}Material}{29}{section.3}%
