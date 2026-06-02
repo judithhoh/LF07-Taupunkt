@@ -19,7 +19,7 @@ def main():
             #print("V: "+str(rechner.berechnen()))
             rechner.berechnen()
             print("delta: "+str(rechner.delta_taupunkt))
-            if rechner.delta_taupunkt > 0:
+            if rechner.delta_taupunkt > 3:
                 lufter = 1
                 relay.open()
                 print("lüfter an")
