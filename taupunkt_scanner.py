@@ -30,7 +30,7 @@ def main():
             datenbank.daten_schreiben(rechner.temperatur_innen, rechner.temperatur_aussen, rechner.humidity_innen,
                                       rechner.humidity_aussen, rechner.delta_taupunkt, lufter, rechner.taupunkt_innen,
                                       rechner.taupunkt_aussen)
-            time.sleep(1)
+            time.sleep(5)
 
     except KeyboardInterrupt:
         # LCD ausschalten.
