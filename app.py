@@ -33,7 +33,7 @@ def tabelle():
 
     "<head>"
     "<title>Taupunktlüfter_tabelle</title>"
-
+    "<meta http-equiv='refresh' content='5'>"
     "<style>"
     "table, th, td {"
     "border:1px solid black;"
