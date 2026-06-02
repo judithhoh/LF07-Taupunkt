@@ -17,7 +17,7 @@ class Dht11Sensor:
         while not result.is_valid():  # lesen bis Werte ok sind
             if count%20==0:
                 print("messung...")
-            if count == 100:
+            if count == 1000:
                 print("Messung war nicht möglich")
                 return "Messung war nicht möglich"
             result = self.scanner.read()
